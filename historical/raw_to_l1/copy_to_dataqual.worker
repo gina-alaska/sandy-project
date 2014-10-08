@@ -1,0 +1,13 @@
+watch "/home/processing/dbvm/data/level1.gina" do
+  match file 'done' do |path|
+    m15s = File.join(File.expand_path("..", path), "viirs/SVM15*")
+    geos = File.join(File.expand_path("..", path), "viirs/GMTCO*")
+
+    files = Dir.glob(m15s) + Dir.glob(geos)
+
+    event_file = "#{File.expand_path("..", path).split("/").last}.event"
+
+    run "scp #{m15s} #{geos} pds@dataqual.gina.alaska.edu:/home/ftp/pub/incoming/"
+    run "ssh pds@dataqual.gina.alaska.edu 'echo \"#{files.collect{|f| File.basename(f) }.join("\\\n")}\" > /home/ftp/pub/incoming/#{event_file}'"
+  end
+end

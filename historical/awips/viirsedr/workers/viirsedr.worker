@@ -1,0 +1,14 @@
+require 'fileutils'
+
+watch "#{ENV['WORK_DIR']}/level1/" do
+	match extension "viirs.done" do |path|
+		passdir = path.chomp(".viirs.done")
+		pass_id = File.basename(passdir)
+		workdir = "#{ENV['WORK_DIR']}/level2/#{pass_id}/viirs"
+		FileUtils.mkdir_p(workdir)
+		run "viirs_edr.sh -i #{passdir}/viirs --alg VCM -w #{workdir} -p 4"
+		run "cp -a #{ENV['WORK_DIR']}/level2/#{pass_id} /gluster/gvolsatellitecache/snpp/level2/"
+		run "touch #{ENV['WORK_DIR']}/level2/#{pass_id}.viirs.done"
+		run "touch /gluster/gvolsatellitecache/snpp/level2/#{pass_id}.viirs.done"
+	end
+end

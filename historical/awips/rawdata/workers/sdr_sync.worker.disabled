@@ -1,0 +1,16 @@
+#Convert the date format RTSTPS uses to gina's preferred formatting
+#EX:  
+#  Input:  RNSCA-RVIRS_npp_d20131115_t2002043_e2010492_b00001_c20131115204629862000_all-_dev.h5
+#  Output: npp.13319.2002
+require 'fileutils'
+
+watch "#{ENV['WORK_DIR']/level1" do
+	match extension done do |path|
+		sensor = File.extname(path.chomp(".done"))
+		
+		input = File.join(File.dirname(path), sensor)
+		output = "#{ENV['L1_DIR']}/#{File.basename(input)}"
+		FileUtil.mkdir_p(output) unless File.exists?(output)
+		puts "rsync -a #{input} #{output}"
+	end
+end

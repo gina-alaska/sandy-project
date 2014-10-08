@@ -1,0 +1,35 @@
+require 'securerandom'
+require 'fileutils'
+
+# watches for done files and copies the entire pass to the adde-npp share
+watch "/mnt/raid/processing/data/level1.gina" do
+  # watches for a file named "done" and will copy those files
+  match file done do |path|
+    pass_id = File.dirname(path).split("/").last
+    l2gina = "/home/processing/dbvm/data/level2.gina/"
+
+    archive_name  = DateTime.strptime(pass_id, "npp.%y%j.%H%M").strftime("%Y_%m_%d_%j_%H%M")
+    l2archive = Pathname.new "#{ENV['DBVM_ARCHIVE_DIR']}/npp/viirs/#{archive_name}/edr"
+
+    output = File.join(l2gina, pass_id)
+    FileUtils.mkdir_p(output) unless File.exists?(output)
+    #Archive directory
+    FileUtils.mkdir_p(l2archive) unless File.exists?(l2archive)
+    
+    work_dir = File.join(ENV['WORK_DIR'], SecureRandom.uuid)
+
+    FileUtils.mkdir_p(work_dir)
+    run "viirs_edr.sh -i #{File.dirname(path)}/viirs --alg='VCM' -w #{work_dir}"
+
+    #run "mv #{work_dir}/*.h5 #{output}/"
+    Dir.glob(File.join(work_dir, "*.h5")).each do |file|
+      FileUtils.ln(file, File.join(output, File.basename(file)))
+      FileUtils.ln(file, File.join(l2archive, File.basename(file)))
+    end
+
+
+    FileUtils.rmdir(work_dir)
+
+
+  end
+end

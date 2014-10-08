@@ -1,0 +1,25 @@
+#Convert the date format RTSTPS uses to gina's preferred formatting
+#EX:  
+#  Input:  RNSCA-RVIRS_npp_d20131115_t2002043_e2010492_b00001_c20131115204629862000_all-_dev.h5
+#  Output: npp.13319.2002
+require 'fileutils'
+
+watch "/home/processing/work/level0" do
+	match /^RCRIS.*h5$/ do |path|
+		rdr = File.basename(path)
+
+		gina_name = rtstps_date_to_gina(rdr)
+		sdr_dir = File.join(ENV["WORK_DIR"], "level1")
+		sdr_work_dir = File.join(sdr_dir, gina_name, "cris")
+		#Get rid of the scratch space
+		if File.exists?(sdr_work_dir) 
+			FileUtils.rm_f(sdr_work_dir)
+		end
+		FileUtils.mkdir_p(sdr_work_dir)
+		
+		run "cris_sdr.sh -w #{sdr_work_dir} -z #{path}"
+
+		run "touch #{sdr_dir}/#{gina_name}.cris.done"
+		#run "cp -R #{sdr_work_dir} 
+	end
+end

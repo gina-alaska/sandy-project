@@ -1,0 +1,19 @@
+
+# watchs the NFS mount from npp.x and looks for new done files in a pass folder
+# and runs the ~/scripts/process_viirs.py against the directory 
+# and shoving output in to /mnt/raid/processing
+watch File.realpath("/home/processing/npp-input/level1.gina"), :ignore => /viirs/, :force_polling => true, :latency => 10 do
+  # watches for a file named "done" and will process that directory
+  # use something like match extension md5 to watch for all md5 files.
+  match file done do |path|
+    path = filename.gsub /\/done$/, ""
+    scene_id = path.split("/").last
+    dest = File.join("/mnt/raid/processing", scene_id)
+    start_time = Time.now
+    run "process_bands.rb -a alaska_albers -t 3 -V ", path, dest
+    end_time = Time.now
+    #run "/home/processing/scripts/process_viirs.py", path, dest
+    run "cd #{dest} && md5sum * > #{dest}/#{scene_id}.md5" if File.exists?(dest)
+    #announce "Processed VIIRS: #{File.basename(path)} in #{(end_time-start_time)/60.0} m"
+  end
+end

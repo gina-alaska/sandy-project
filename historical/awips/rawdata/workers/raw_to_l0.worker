@@ -1,0 +1,18 @@
+watch ENV["RAW_DIR"] do
+	match extension md5 do |path|
+		l0 = "#{path.chomp("md5")}zero.gz"
+		pass_id = File.basename(l0, ".zero.gz")
+		zero_work_path = File.join(ENV["WORK_DIR"], "raw", "#{pass_id}.zero")
+
+		#Extract the raw data
+		unless File.exists?(zero_work_path)
+			run "gunzip -c #{l0} > #{zero_work_path}"
+		end
+		
+		#Need to be in raw, so that rtstps can use ../data
+		Dir.chdir(File.dirname(zero_work_path)) do
+			rtstps = ENV["RTSTPS_HOME"]
+			run "#{rtstps}/bin/batch.sh #{rtstps}/config/npp.xml #{pass_id}.zero"
+		end
+	end
+end

@@ -1,0 +1,17 @@
+require 'fileutils'
+
+watch "#{ENV['WORK_DIR']}/level2/" do
+	match extension "cris.done" do |path|
+		passdir = path.chomp(".cris.done")
+		pass_id = File.basename(passdir)
+		workdir = "#{ENV['WORK_DIR']}/awips/#{pass_id}"
+		FileUtils.mkdir_p(workdir)
+		Dir.chdir(workdir) do
+			run "/opt/polar2grid_hs/bin/drrtv2awips.sh -g 203_10km -d #{passdir}/cris"
+			Dir.glob("SSEC_AWIPS_HYPER-AK*").each do |file|
+				run "pqinsert #{file}"
+			end
+		end
+
+	end
+end

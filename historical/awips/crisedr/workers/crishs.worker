@@ -1,0 +1,15 @@
+require 'fileutils'
+
+watch "#{ENV['WORK_DIR']}/level1/" do
+	match extension "cris.done" do |path|
+		passdir = path.chomp(".cris.done")
+		pass_id = File.basename(passdir)
+		workdir = "#{ENV['WORK_DIR']}/level2/#{pass_id}/cris"
+		FileUtils.mkdir_p(workdir)
+		Dir.chdir(workdir) do
+			run "run_HSRTV.scr 3 #{passdir}/cris"
+		end
+		run "touch #{ENV['WORK_DIR']}/level2/#{pass_id}.cris.done"
+
+	end
+end

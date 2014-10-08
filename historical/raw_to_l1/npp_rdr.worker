@@ -1,0 +1,11 @@
+watch '/home/processing/raw' do 
+	match extension md5 do |path|
+		l0 = "#{path.chomp("md5")}zero.gz"
+		#For now, cp -l it to the l0 dir just for historic consistancy
+		begin 
+			sleep 5
+		end until File.exists?(l0)
+		run "cp -l #{l0} #{ENV["L0_DIR"]}"
+		run "db_npp.bash #{ENV["L0_DIR"]}/#{File.basename(l0)}"
+	end
+end

@@ -1,0 +1,82 @@
+#Convert the date format RTSTPS uses to gina's preferred formatting
+#EX:  
+#  Input:  RNSCA-RVIRS_npp_d20131115_t2002043_e2010492_b00001_c20131115204629862000_all-_dev.h5
+#  Output: npp.13319.2002
+#
+def rtstps_name_to_date( rdr ) 
+	require 'date'
+	fields = rdr.split("_")
+	date = DateTime.strptime(fields[2..3].join, "d%Y%m%dt%H%M%S")
+	puts date.inspect
+	date
+end
+
+def date_to_gina_name( date )
+	require 'date'
+	gina_name = date.strftime("npp.%y%j.%H%M")	
+	puts gina_name
+	gina_name
+end
+
+def notify_ssec(platform, date, file)
+  command = "dbrtn_notify_gina_alaska.sh #{platform} #{date.strftime('%Y%m%d')} #{date.strftime('%H%M%S')} http://dds.gina.alaska.edu/snpp/rdr/#{file}"
+  puts command
+  run  command
+end
+
+require 'fileutils'
+
+watch "#{ENV["WORK_DIR"]}/level0" do
+	match /^RNSCA-RVIRS.*h5$/ do |path|
+		rdr = File.basename(path)
+		cris_rdr = Dir.glob(File.join(File.dirname(path), "#{File.basename(path).gsub(/RNSCA-RVIRS/, 'RCRIS-RNSCA')[0..28]}*")).first
+		atms_rdr = Dir.glob(File.join(File.dirname(path), "#{File.basename(path).gsub(/RNSCA-RVIRS/, 'RATMS-RNSCA')[0..28]}*")).first
+
+		Dir.chdir(File.join(ENV['WORK_DIR'],'level0')) do
+			run "scp #{rdr} #{cris_rdr} #{atms_rdr} drop@dds:/san/ftp_cluster/snpp/rdr/"
+		end
+		date_obj = rtstps_name_to_date(rdr)
+
+		#Notify SSEC Web Services of availability
+		notify_ssec('snpp:cris:rdr', rtstps_name_to_date(cris_rdr), File.basename(cris_rdr))
+		notify_ssec('snpp:atms:rdr', rtstps_name_to_date(atms_rdr), File.basename(atms_rdr))
+
+		
+		gina_name = date_to_gina_name(date_obj)
+
+		sdr_dir = File.join(ENV["WORK_DIR"], "level1")
+		sdr_work_dir = File.join(sdr_dir, gina_name, "viirs")
+		#Get rid of the scratch space
+		if File.exists?(sdr_work_dir) 
+			FileUtils.rm_f(sdr_work_dir)
+		end
+		FileUtils.mkdir_p(sdr_work_dir)
+		
+		run "viirs_sdr.sh -W #{sdr_work_dir} -z -p 8 #{path}"
+		Dir.chdir(File.join(sdr_work_dir)) do 
+			Dir.glob("SVM05*.h5").each do |granule|
+				run "run_viirs_crefl.sh #{File.realpath(granule)}"
+			end
+		end
+		run "touch #{sdr_dir}/#{gina_name}.viirs.done"
+
+		sdr_work_dir = File.join(sdr_dir, gina_name, "cris")
+                if File.exists?(sdr_work_dir)
+                        FileUtils.rm_f(sdr_work_dir)
+                end
+                FileUtils.mkdir_p(sdr_work_dir)
+		#Really hacky way to find the associated cris rdr.
+		#Timestamp isn't identical so a simple gsub of the sensor type isn't sufficient
+		#First 29 characters (up to hour) isn't sufficient but is close enough
+		##  If a pass comes in at the end of an hour, this will still potentially fail.
+		##  Should be in it's own worker, but that has its own problems
+
+		cris_rdr = Dir.glob(File.join(File.dirname(path), "#{File.basename(path).gsub(/RNSCA-RVIRS/, 'RCRIS-RNSCA')[0..28]}*")).first
+                run "cris_sdr.sh -w #{sdr_work_dir} -p 8 -z #{cris_rdr}"
+                run "touch #{sdr_dir}/#{gina_name}.cris.done"
+		
+		run "cp -a #{sdr_dir}/#{gina_name} /gluster/gvolsatellitecache/snpp/level1/"
+		run "touch /gluster/gvolsatellitecache/snpp/level1/#{gina_name}.viirs.done"
+		run "touch /gluster/gvolsatellitecache/snpp/level1/#{gina_name}.cris.done"
+	end
+end

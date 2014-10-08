@@ -1,0 +1,14 @@
+---
+worker_defs: /home/processing/conveyor/viirs2awips/workers
+logfile: /home/processing/conveyor/viirs2awips/log/conveyor.log
+threadpool: 1
+websocket:
+  disabled: true
+  host: 0.0.0.0
+  port: 9878
+campfire:
+  subdomain: ''
+  use_ssl: true
+  token: ''
+  room: ''
+version: 0.1.2
