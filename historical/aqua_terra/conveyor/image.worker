@@ -1,0 +1,10 @@
+watch "/home/processing/processing/images/", :latency => 10 do
+  # watches for a file named "done" and will process that directory
+  # use something like match extension md5 to watch for all md5 files.
+  match extension "done" do |done|
+    puts "Working on path #{path}"
+    item = File.dirname(done) + "/" + File.basename(done, ".done")
+    run "conveyor_make_final_images.rb", item
+    announce "Made final images for #{File.basename(done, ".done")}"
+  end
+end

@@ -1,0 +1,10 @@
+watch "/home/processing/processing/l0/", :latency => 10 do
+  # watches for a file named "done" and will process that directory
+  # use something like match extension md5 to watch for all md5 files.
+  match extension "md5" do |md5|
+    path = File.dirname(md5) + "/" + File.basename(md5, ".md5") + ".zero.gz"
+    puts "Working on path #{path}"
+    run "conveyor_processes_modis.rb", path, "/home/processing/processing/l1"
+    announce "Processed Modis Data: #{File.basename(path, ".gz")}"
+  end
+end

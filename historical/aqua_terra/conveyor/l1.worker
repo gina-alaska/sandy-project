@@ -1,0 +1,10 @@
+watch "/home/processing/processing/l1/", :latency => 10 do
+  # watches for a file named "done" and will process that directory
+  # use something like match extension md5 to watch for all md5 files.
+  match extension "done" do |done|
+    puts "Working on path #{path}"
+    item = File.dirname(done) + "/" + File.basename(done, ".done")
+    run "conveyor_extract_modis_bands.rb", item, "/home/processing/processing/images"
+    announce "Processed #{File.basename(done, ".done")}"
+  end
+end

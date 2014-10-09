@@ -1,0 +1,17 @@
+require "fileutils"
+
+
+
+watch "/home/processing/processing/l1_distro/", :latency => 10 do
+  # watches for a file named "done" and will process that directory
+  # use something like match extension md5 to watch for all md5 files.
+  match extension "done" do |done|
+     begin
+    	puts "Working on path #{path}"
+	system("modis_hdf_distro.rb", done)
+     rescue RuntimeError=>e
+		puts("ERROR: #{e}")
+     end
+ 
+  end
+end
