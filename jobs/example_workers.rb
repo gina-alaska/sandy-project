@@ -17,7 +17,8 @@ end
 # where you can then say
 # SleepWorker.perform_async
 # LsWorker.perform_async '~/'
-#
+# 1.upto(5).each{|i| DbWorker.perform_async(i)}
+
 class SleepWorker
   include Sidekiq::Worker
 
@@ -37,5 +38,42 @@ class LsWorker
     command.error!
 
     puts command.stdout
+  end
+end
+
+class DbWorker
+  include Sidekiq::Worker
+
+  def perform(id)
+    s = ExampleModel.find(id)
+
+    puts "Doing work on #{s.string}"
+    sleep 3
+    puts "Finished work on #{s.string}"
+  end
+end
+
+class ExampleModel
+  attr_accessor :string
+  DB = {
+    1 => {
+      string: 'one'
+    },
+    2 => {
+      string: 'two'
+    },
+    3 => {
+      string: 'four'
+    }
+  }
+
+  def initialize id
+    instance = DB[id]
+    raise "Instance not found" if instance.nil?
+    @string = instance[:string]
+  end
+
+  def self.find(id)
+    new(id)
   end
 end
