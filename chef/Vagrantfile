@@ -10,7 +10,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.hostname = "sandy-dev-berkshelf"
   config.omnibus.chef_version = :latest
   config.berkshelf.enabled = true
-  
+
+  #Shared folders
+  sandy_root = File.expand_path(File.dirname(__FILE__), '..')
+  config.vm.synced_folder sandy_root, "/home/vagrant/sandy-project"
+
   # An array of symbols representing groups of cookbook described in the Vagrantfile
   # to exclusively install and copy to Vagrant's shelf.
   # config.berkshelf.only = []
@@ -23,6 +27,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box_url = "https://opscode-vm.s3.amazonaws.com/vagrant/opscode_centos-6.4_provisionerless.box"
 
   config.vm.network :private_network, type: "dhcp"
+  #Force ip4/6 requests to be made seperatly
+  config.vm.provision :shell, inline: "if [ ! $(grep single-request-reopen /etc/sysconfig/network) ]; then echo RES_OPTIONS=single-request-reopen >> /etc/sysconfig/network && service network restart; fi"
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
@@ -53,6 +59,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         password: {
           postgres: "s4nd1-d3v-D4taBa53"
         }
+      },
+      chruby: {
+        default: 'embedded'
       },
       users: [
         'vagrant'
