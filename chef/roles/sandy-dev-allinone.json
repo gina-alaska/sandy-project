@@ -1,0 +1,32 @@
+{
+  "name": "sandy-dev-allinone",
+  "description": "Sandy Developement Machine, All in one",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "chruby": {
+      "default": "ruby-2.1.1",
+      "rubies": {
+        "1.9.3-p392": false,
+        "1.9.3-p448": false,
+        "2.1.1": true
+      },
+      "auto_switch": false
+    },
+    "postgresql": {
+      "password": {
+        "postgres": "s4nd1-d3v-D4taBa53"
+      }
+    }
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[chruby::system]",
+    "recipe[postgresql::server]",
+    "recipe[redisio::default]",
+    "recipe[redisio::enable]"
+  ],
+  "env_run_lists": {
+  }
+}

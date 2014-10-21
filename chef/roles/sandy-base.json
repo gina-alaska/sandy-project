@@ -1,0 +1,71 @@
+{
+  "name": "sandy-dev-allinone",
+  "description": "Sandy Developement Machine, All in one",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "ntp": {
+        "servers": [
+          "ntp.alaska.edu",
+          "0.pool.ntp.org",
+          "1.pool.ntp.org",
+          "2.pool.ntp.org",
+          "3.pool.ntp.org"
+        ]
+      },
+      "resolver": {
+        "search": "gina.alaska.edu x.gina.alaska.edu",
+        "nameservers": [
+          "137.229.31.16",
+          "137.229.30.33",
+          "8.8.8.8"
+        ]
+      },
+      "iptables-ng": {
+        "rules": {
+          "filter": {
+            "INPUT": {
+              "00-established": {
+                "rule": "-m state --state RELATED,ESTABLISHED -j ACCEPT"
+              },
+              "01-icmp": {
+                "rule": "-p icmp -j ACCEPT"
+              },
+              "01-lo": {
+                "rule": "-i lo -j ACCEPT"
+              },
+              "20-ssh": {
+                "rule": "-m state --state NEW -p tcp --dport 22 -m recent --set",
+                "ip_version": 4
+              },
+              "21-ssh": {
+                "rule": "-m state --state NEW -p tcp --dport 22 -m recent --update --seconds 60 --hitcount 10 -j DROP",
+                "ip_version": 4
+              },
+              "22-ssh": {
+                "rule": "-m state --state NEW -p tcp -s 137.229.19.0/24,10.19.16.0/23,10.0.19.0/24 --dport 22 -j ACCEPT",
+                "ip_version": 4
+              },
+              "99-reject": {
+                "rule": "-j REJECT"
+              }
+            },
+            "FORWARD": {
+              "99-reject": {
+                "rule": "-j REJECT"
+              }
+            }
+          }
+        }
+      },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[ntp::default]",
+    "recipe[resolver::default]",
+    "recipe[iptables-ng::default]",
+    "recipe[chef-client]",
+  ],
+  "env_run_lists": {
+  }
+}
