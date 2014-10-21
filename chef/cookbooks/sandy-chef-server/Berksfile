@@ -1,0 +1,8 @@
+source "https://supermarket.getchef.com"
+
+cookbook 'chef-server-populator', github: 'johnbellone/chef-server-populator'
+cookbook 'chef-server'
+cookbook 'chef-client'
+cookbook 'chef-sugar'
+
+metadata

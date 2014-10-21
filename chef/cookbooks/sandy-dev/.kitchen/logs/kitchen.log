@@ -1,0 +1,114 @@
+I, [2014-10-10T11:18:05.935157 #28993]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+E, [2014-10-10T11:18:06.581445 #28993] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-10T11:18:06.581468 #28993] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2014-10-10T11:18:06.581483 #28993] ERROR -- Kitchen: Message: Could not load or activate Berkshelf (cannot load such file -- berkshelf)
+E, [2014-10-10T11:18:06.581496 #28993] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-10-10T11:18:06.581509 #28993] ERROR -- Kitchen: Class: LoadError
+E, [2014-10-10T11:18:06.581523 #28993] ERROR -- Kitchen: Message: cannot load such file -- berkshelf
+E, [2014-10-10T11:18:06.581536 #28993] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-10T11:18:06.581549 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef/berkshelf.rb:80:in `rescue in load_berkshelf!'
+E, [2014-10-10T11:18:06.581562 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef/berkshelf.rb:67:in `load_berkshelf!'
+E, [2014-10-10T11:18:06.581575 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef/berkshelf.rb:43:in `load!'
+E, [2014-10-10T11:18:06.581590 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/chef_base.rb:135:in `load_needed_dependencies!'
+E, [2014-10-10T11:18:06.581603 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/test-kitchen-1.2.1/lib/kitchen/provisioner/base.rb:44:in `instance='
+E, [2014-10-10T11:18:06.581617 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:240:in `setup_provisioner'
+E, [2014-10-10T11:18:06.581631 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/test-kitchen-1.2.1/lib/kitchen/instance.rb:93:in `initialize'
+E, [2014-10-10T11:18:06.581644 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new'
+E, [2014-10-10T11:18:06.581658 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:128:in `new_instance'
+E, [2014-10-10T11:18:06.581671 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2014-10-10T11:18:06.581684 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `map'
+E, [2014-10-10T11:18:06.581699 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `with_index'
+E, [2014-10-10T11:18:06.581712 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-10-10T11:18:06.581725 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/test-kitchen-1.2.1/lib/kitchen/config.rb:52:in `instances'
+E, [2014-10-10T11:18:06.581739 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-10-10T11:18:06.581752 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/test-kitchen-1.2.1/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-10-10T11:18:06.581765 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:37:in `block in call'
+E, [2014-10-10T11:18:06.581778 #28993] ERROR -- Kitchen: /opt/rubies/1.9.3-p547/lib/ruby/1.9.1/benchmark.rb:280:in `measure'
+E, [2014-10-10T11:18:06.581791 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/test-kitchen-1.2.1/lib/kitchen/command/action.rb:36:in `call'
+E, [2014-10-10T11:18:06.581805 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-10-10T11:18:06.581819 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:118:in `block (2 levels) in <class:CLI>'
+E, [2014-10-10T11:18:06.581832 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2014-10-10T11:18:06.581850 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2014-10-10T11:18:06.581864 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/test-kitchen-1.2.1/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-10-10T11:18:06.581877 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2014-10-10T11:18:06.581891 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2014-10-10T11:18:06.581904 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/test-kitchen-1.2.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-10-10T11:18:06.581918 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/test-kitchen-1.2.1/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-10-10T11:18:06.581932 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/gems/test-kitchen-1.2.1/bin/kitchen:13:in `<top (required)>'
+E, [2014-10-10T11:18:06.581945 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/bin/kitchen:23:in `load'
+E, [2014-10-10T11:18:06.581959 #28993] ERROR -- Kitchen: /home/smacfarl/.gem/ruby/1.9.3/bin/kitchen:23:in `<main>'
+E, [2014-10-10T11:18:06.581972 #28993] ERROR -- Kitchen: ----------------------
+I, [2014-10-10T11:18:40.037955 #29117]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.2.dev)
+I, [2014-10-10T11:18:41.178531 #29117]  INFO -- Kitchen: -----> Creating <default-centos-64>...
+I, [2014-10-10T11:19:23.163946 #29117]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+E, [2014-10-10T11:21:03.395050 #29117] ERROR -- Kitchen: Converge failed on instance <default-centos-64>.
+I, [2014-10-10T11:25:55.351386 #31930]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.2.dev)
+I, [2014-10-10T11:25:56.460454 #31930]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+E, [2014-10-10T11:25:58.652786 #31930] ERROR -- Kitchen: ------Exception-------
+E, [2014-10-10T11:25:58.652841 #31930] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2014-10-10T11:25:58.652876 #31930] ERROR -- Kitchen: Message: Failed to complete #converge action: [Berkshelf::NoSolutionError]
+E, [2014-10-10T11:25:58.652908 #31930] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-10-10T11:25:58.652939 #31930] ERROR -- Kitchen: Class: Berkshelf::NoSolutionError
+E, [2014-10-10T11:25:58.652970 #31930] ERROR -- Kitchen: Message: Berkshelf::NoSolutionError
+E, [2014-10-10T11:25:58.653001 #31930] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-10-10T11:25:58.653032 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/berkshelf-3.1.5/lib/berkshelf/resolver.rb:83:in `rescue in resolve'
+E, [2014-10-10T11:25:58.653063 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/berkshelf-3.1.5/lib/berkshelf/resolver.rb:73:in `resolve'
+E, [2014-10-10T11:25:58.653094 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/berkshelf-3.1.5/lib/berkshelf/installer.rb:174:in `install_from_universe'
+E, [2014-10-10T11:25:58.653125 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/berkshelf-3.1.5/lib/berkshelf/installer.rb:39:in `run'
+E, [2014-10-10T11:25:58.653156 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/berkshelf-3.1.5/lib/berkshelf/berksfile.rb:371:in `install'
+E, [2014-10-10T11:25:58.653187 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/berkshelf-3.1.5/lib/berkshelf/berksfile.rb:590:in `vendor'
+E, [2014-10-10T11:25:58.653218 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef/berkshelf.rb:55:in `block in resolve'
+E, [2014-10-10T11:25:58.653249 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.1.0/gems/thor-0.19.1/lib/thor/shell/basic.rb:20:in `mute'
+E, [2014-10-10T11:25:58.653281 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef/berkshelf.rb:51:in `resolve'
+E, [2014-10-10T11:25:58.653321 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:394:in `block in resolve_with_berkshelf'
+E, [2014-10-10T11:25:58.653355 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:393:in `synchronize'
+E, [2014-10-10T11:25:58.653385 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:393:in `resolve_with_berkshelf'
+E, [2014-10-10T11:25:58.653416 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:259:in `prepare_cookbooks'
+E, [2014-10-10T11:25:58.653447 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_base.rb:120:in `create_sandbox'
+E, [2014-10-10T11:25:58.653478 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/provisioner/chef_solo.rb:33:in `create_sandbox'
+E, [2014-10-10T11:25:58.653524 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/ssh_base.rb:40:in `converge'
+E, [2014-10-10T11:25:58.653575 #31930] ERROR -- Kitchen: /home/smacfarl/.chefdk/gem/ruby/2.1.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:75:in `converge'
+E, [2014-10-10T11:25:58.653627 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:280:in `public_send'
+E, [2014-10-10T11:25:58.653665 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:280:in `block in perform_action'
+E, [2014-10-10T11:25:58.653709 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:315:in `call'
+E, [2014-10-10T11:25:58.653741 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:315:in `synchronize_or_call'
+E, [2014-10-10T11:25:58.653783 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:290:in `block in action'
+E, [2014-10-10T11:25:58.653817 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2014-10-10T11:25:58.653860 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:289:in `action'
+E, [2014-10-10T11:25:58.653891 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:280:in `perform_action'
+E, [2014-10-10T11:25:58.653936 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:263:in `converge_action'
+E, [2014-10-10T11:25:58.653981 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:253:in `block in transition_to'
+E, [2014-10-10T11:25:58.654011 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:252:in `each'
+E, [2014-10-10T11:25:58.654065 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:252:in `transition_to'
+E, [2014-10-10T11:25:58.654109 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/instance.rb:119:in `converge'
+E, [2014-10-10T11:25:58.654152 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:109:in `public_send'
+E, [2014-10-10T11:25:58.654197 #31930] ERROR -- Kitchen: /opt/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:109:in `block (2 levels) in run_action'
+E, [2014-10-10T11:25:58.654241 #31930] ERROR -- Kitchen: ----------------------
+I, [2014-10-10T11:26:33.434147 #31994]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.2.dev)
+I, [2014-10-10T11:26:34.500577 #31994]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+E, [2014-10-10T11:26:53.291779 #31994] ERROR -- Kitchen: Converge failed on instance <default-centos-64>.
+I, [2014-10-10T11:26:55.103101 #32047]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.2.dev)
+I, [2014-10-10T11:26:56.165880 #32047]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+E, [2014-10-10T11:29:33.633640 #32047] ERROR -- Kitchen: Converge failed on instance <default-centos-64>.
+I, [2014-10-10T11:33:44.141670 #32338]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.2.dev)
+I, [2014-10-10T11:33:45.205540 #32338]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+E, [2014-10-10T11:34:18.804990 #32338] ERROR -- Kitchen: Converge failed on instance <default-centos-64>.
+I, [2014-10-10T11:35:58.382264 #32460]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.2.dev)
+I, [2014-10-10T11:35:59.438964 #32460]  INFO -- Kitchen: -----> Destroying <default-centos-64>...
+I, [2014-10-10T11:36:03.409027 #32460]  INFO -- Kitchen: -----> Kitchen is finished. (0m5.03s)
+I, [2014-10-10T11:36:03.683126 #351]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.2.dev)
+I, [2014-10-10T11:36:04.752457 #351]  INFO -- Kitchen: -----> Creating <default-centos-64>...
+I, [2014-10-10T11:36:49.309677 #351]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+I, [2014-10-10T11:41:09.362693 #351]  INFO -- Kitchen: -----> Kitchen is finished. (5m5.68s)
+I, [2014-10-10T11:41:22.519754 #1969]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.2.dev)
+I, [2014-10-10T11:41:23.608039 #1969]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+I, [2014-10-10T11:47:23.832335 #1969]  INFO -- Kitchen: -----> Kitchen is finished. (6m1.31s)
+I, [2014-10-10T11:57:30.446147 #4057]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.2.dev)
+I, [2014-10-10T11:57:31.504402 #4057]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+E, [2014-10-10T11:57:46.191303 #4057] ERROR -- Kitchen: Converge failed on instance <default-centos-64>.
+I, [2014-10-10T11:58:57.408054 #4156]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.2.dev)
+I, [2014-10-10T11:58:58.462470 #4156]  INFO -- Kitchen: -----> Converging <default-centos-64>...
+I, [2014-10-10T11:59:49.997296 #4156]  INFO -- Kitchen: -----> Kitchen is finished. (0m52.59s)
+I, [2014-10-10T12:06:10.937588 #4711]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.2.dev)
+I, [2014-10-10T12:06:12.054863 #4711]  INFO -- Kitchen: -----> Destroying <default-centos-64>...
+I, [2014-10-10T12:06:16.021831 #4711]  INFO -- Kitchen: -----> Kitchen is finished. (0m5.08s)

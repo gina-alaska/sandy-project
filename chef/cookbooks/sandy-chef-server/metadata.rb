@@ -1,0 +1,12 @@
+name             'sandy-chef-server'
+maintainer       'UAF-GINA'
+maintainer_email 'support+chef@gina.alaska.edu'
+license          'Apache 2.0'
+description      'Installs/Configures sandy-chef-server'
+long_description 'Installs/Configures sandy-chef-server'
+version          '0.1.0'
+
+depends 'chef-server-populator'
+depends 'chef-server'
+depends 'chef-client'
+depends 'chef-sugar'
