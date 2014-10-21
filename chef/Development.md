@@ -6,9 +6,9 @@ Clone this repository to your workstation
 
 ### Required Tools
 
-* ChefDK
-* VirtualBox
-* Vagrant
+* [ChefDK](http://downloads.getchef.com/chef-dk/)
+* [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+* [Vagrant](http://vagrantup.com/downloads.html)
 * Vagrant Omnibus
 * Vagrant Cachier
 * Vagrant Berkshelf
@@ -22,3 +22,18 @@ vagrant plugin install vagrant-omnibus --plugin-version '>= 2.0.1'
 vagrant plugin install vagrant-cachier
 vagrant plugin install vagrant-berkshelf
 ```
+
+
+### Starting your Virtual Machine
+
+In the root of the repository (this will take a while the first time):
+```
+vagrant up
+```
+
+### Log in to your Virtual Machine
+```
+vagrant ssh
+```
+
+The sandy project is made available to you under 'sandy-project' in your home directory.
