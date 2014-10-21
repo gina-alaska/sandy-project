@@ -18,9 +18,9 @@ Follow installation instructions for ChefDK, VirtualBox and Vagrant for your pla
 
 #### Plugin Installation
 ```
-vagrant plugin install vagrant-omnibus --plugin-version '>= 2.0.1'
+vagrant plugin install vagrant-omnibus
 vagrant plugin install vagrant-cachier
-vagrant plugin install vagrant-berkshelf
+vagrant plugin install vagrant-berkshelf --plugin-version '>= 2.0.1'
 ```
 
 
