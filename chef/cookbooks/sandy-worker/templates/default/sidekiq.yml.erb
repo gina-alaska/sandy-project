@@ -1,0 +1,6 @@
+---
+:concurrency: <%= @concurrency %>
+:queues:
+<% @queues.each do |queue, weight| %>
+ - [<%=queue%>, <%=weight || 1%>]
+<% end %>

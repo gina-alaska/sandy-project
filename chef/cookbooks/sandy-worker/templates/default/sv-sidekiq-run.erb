@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd <%= @worker_dir %>
+exec 2>&1
+exec chpst -u <%= @options[:user] %> chruby-exec <%= @options[:rubyversion] %>  -- bundle exec sidekiq -d -c config/sidekiq.yml
