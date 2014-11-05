@@ -1,0 +1,15 @@
+{
+  "name": "cspp-uw-hyperspectral",
+  "description": "CSPP Hyperspectral Algorithms",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "cspp": {
+      "uw-hyperspectral": {
+        "components": {
+          "app": {"url": "http://mirrors.gina.alaska.edu/SSEC/CSPP/CSPP_UW_HSRTV_V1.2.tar.gz"},
+          "coeffs": { "url": "http://mirrors.gina.alaska.edu/SSEC/CSPP/CSPP_UW_HSRTV_coeffs_v1.2.tar.gz"}
+        }
+      }
+    }
+  }
+}
