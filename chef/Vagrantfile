@@ -71,25 +71,17 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         'vagrant'
       ],
       rtstps: {
-        user: 'vagrant',
-        source: 'http://mirrors.gina.alaska.edu/SSEC/CSPP/RT-STPS_5.3.tar.gz'
+        user: 'vagrant'
       },
       cspp: {
-        user: 'vagrant',
-        "snpp-sdr" => {
-          components: {
-            app: {url: 'http://mirrors.gina.alaska.edu/SSEC/CSPP/CSPP_SDR_V2.0.tar.gz'},
-            "static-terrain" => { url: 'http://mirrors.gina.alaska.edu/SSEC/CSPP/CSPP_SDR_V2.0_STATIC.tar.gz'},
-            cache: {url: 'http://mirrors.gina.alaska.edu/SSEC/CSPP/CSPP_SDR_V2.0_CACHE.tar.gz'}
-          }
-        }
+        user: 'vagrant'
       }
     }
 
     chef.run_list = [
-      # "role[sandy-dev-allinone]",
-      "rtstps::default",
-      "cspp::snpp_sdr"
+      "role[sandy-web-fullstack]",
+      "role[rtstps]",
+      "role[cspp-fullstack]"
     ]
   end
 end

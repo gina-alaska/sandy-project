@@ -1,0 +1,10 @@
+{
+  "name": "cspp-fullstack",
+  "description": "All CSPP Components",
+  "json_class": "Chef::Role",
+  "run_list": [
+    "role[cspp-snpp-sdr]",
+    "role[cspp-viirs-edr]",
+    "role[cspp-uw-hyperspectral]"
+  ]
+}
