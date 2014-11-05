@@ -13,6 +13,6 @@
     }
   },
   "run_list": [
-    "cspp::uw-hyperspectral"
+    "cspp::uw_hyperspectral"
   ]
 }
