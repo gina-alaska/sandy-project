@@ -12,5 +12,8 @@
         }
       }
     }
-  }
+  },
+  "run_list": [
+    "cspp::snpp-sdr"
+  ]
 }

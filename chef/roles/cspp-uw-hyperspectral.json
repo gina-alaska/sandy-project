@@ -11,5 +11,8 @@
         }
       }
     }
-  }
+  },
+  "run_list": [
+    "cspp::uw-hyperspectral"
+  ]
 }
