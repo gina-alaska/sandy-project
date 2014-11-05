@@ -13,7 +13,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   #Shared folders
   sandy_root = File.expand_path(File.dirname(__FILE__), '..')
+  sandy_opt_cspp = File.join(sandy_root,'cspp')
   config.vm.synced_folder sandy_root, "/home/vagrant/sandy-project"
+
+  FileUtils.mkdir_p(sandy_opt_cspp) unless ::File.exists?(sandy_opt_cspp)
+  config.vm.synced_folder sandy_opt_cspp, "/opt/cspp"
 
   # An array of symbols representing groups of cookbook described in the Vagrantfile
   # to exclusively install and copy to Vagrant's shelf.
@@ -65,11 +69,27 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       },
       users: [
         'vagrant'
-      ]
+      ],
+      rtstps: {
+        user: 'vagrant',
+        source: 'http://mirrors.gina.alaska.edu/SSEC/CSPP/RT-STPS_5.3.tar.gz'
+      },
+      cspp: {
+        user: 'vagrant',
+        "snpp-sdr" => {
+          components: {
+            app: {url: 'http://mirrors.gina.alaska.edu/SSEC/CSPP/CSPP_SDR_V2.0.tar.gz'},
+            "static-terrain" => { url: 'http://mirrors.gina.alaska.edu/SSEC/CSPP/CSPP_SDR_V2.0_STATIC.tar.gz'},
+            cache: {url: 'http://mirrors.gina.alaska.edu/SSEC/CSPP/CSPP_SDR_V2.0_CACHE.tar.gz'}
+          }
+        }
+      }
     }
 
     chef.run_list = [
-      "role[sandy-dev-allinone]"
+      # "role[sandy-dev-allinone]",
+      "rtstps::default",
+      "cspp::snpp_sdr"
     ]
   end
 end
