@@ -1,0 +1,37 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: centos-6.4
+
+suites:
+  - name: default
+    run_list:
+      - recipe[sandy::default]
+    attributes:
+      sandy:
+        git-action: 'sync'
+        worker:
+          scripts-git-action: 'sync'
+        database:
+          password: 'sandy-test-kitchen'
+  - name: worker
+    run_list:
+      - recipe[sandy::worker]
+    attributes:
+      sandy:
+        account: 'processing'
+        git-action: :sync
+  - name: web
+    run_list:
+      - recipe[sandy::web]
+    attributes:
+      sandy:
+        account: 'webdev'
+        git-action: 'sync'
+        worker:
+          scripts-git-action: 'sync'

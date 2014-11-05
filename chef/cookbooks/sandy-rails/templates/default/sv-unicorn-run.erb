@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd <%= @options[:app] %>/current
+
+exec 2>&1
+exec <%= node[:runit][:chpst_bin] %> -e /etc/sv/unicorn/env \
+  -u <%= @options[:user] %>:<%= @options[:user] %> \
+  chruby-exec <%= @options[:rubyversion] %> -- \
+    bundle exec unicorn_rails -c <%= @options[:unicorn_config_path] %> \
+    -E <%= @options[:environment] || 'production' %>
