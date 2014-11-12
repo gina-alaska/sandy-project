@@ -1,0 +1,20 @@
+{
+  "name": "sandy-storage",
+  "description": "Sandy Storage",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "gluster": {
+      "yum": {
+        "baseurl": "http://download.gluster.org/pub/gluster/glusterfs/3.6/LATEST/EPEL.repo/epel-$releasever/$basearch/"
+      }
+    }
+  },
+  "chef_type": "role",
+  "run_list": [
+    "gina-gluster::default"
+  ],
+  "env_run_lists": {
+  }
+}
