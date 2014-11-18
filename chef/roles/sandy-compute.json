@@ -9,8 +9,7 @@
   "chef_type": "role",
   "run_list": [
     "role[sandy-base]",
-    "role[sandy-storage]"
-
+    "recipe[gina-gluster::client]"
   ],
   "env_run_lists": {
   }

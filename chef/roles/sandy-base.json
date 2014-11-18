@@ -4,7 +4,7 @@
   "json_class": "Chef::Role",
   "default_attributes": {
     "chef_client": {
-      "server_url": "https://chef.sandy"
+      "server_url": "https://10.19.16.159"
     },
     "ntp": {
       "servers": [
@@ -94,15 +94,23 @@
     }
   },
   "override_attributes": {
-    "users": [ "smacfarl", "jcable" ]
+    "users": [ "smacfarl", "jcable" ],
+    "glusterfs": {
+      "yum": {
+        "baseurl": "http://download.gluster.org/pub/gluster/glusterfs/3.6/LATEST/EPEL.repo/epel-$releasever/$basearch/"
+      },
+      "client": {
+        "version": null
+      }
+    }
   },
   "chef_type": "role",
   "run_list": [
     "recipe[ntp::default]",
     "recipe[resolver::default]",
     "recipe[iptables-ng::default]",
-    "recipe[openssh]",
-    "recipe[sandy-sudoers]"
+    "recipe[sandy-sudoers]",
+    "recipe[openssh]"
   ],
   "env_run_lists": {
   }
