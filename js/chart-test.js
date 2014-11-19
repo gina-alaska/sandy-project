@@ -30,7 +30,8 @@
       yAxis: {
         title: {
           text: 'Duration (sec)'
-        }
+        },
+        min: 0
       },
       plotOptions: {
         scatter: {
@@ -46,6 +47,11 @@
     };
     return $.each(processing_types, function(index, ptype) {
       var chart;
+      $.extend(options, {
+        title: {
+          text: ptype
+        }
+      });
       chart = $("#" + ptype + "-comparison-chart").highcharts(options);
       return $.each(node_types, function(index, type) {
         return $.getJSON("data/" + type.file + "-" + ptype + ".json", function(data) {

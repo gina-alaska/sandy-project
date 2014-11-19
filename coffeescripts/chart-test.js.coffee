@@ -25,6 +25,7 @@ $ ->
     yAxis:
       title:
         text: 'Duration (sec)'
+      min: 0
     plotOptions:
       scatter:
         marker:
@@ -34,7 +35,12 @@ $ ->
     series: []
 
   $.each processing_types, (index, ptype) ->
+    $.extend options,
+      title:
+        text: ptype
+
     chart = $("##{ptype}-comparison-chart").highcharts(options)
+
     $.each node_types, (index,type) ->
       $.getJSON "data/#{type.file}-#{ptype}.json", (data) ->
         series =
