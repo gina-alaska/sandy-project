@@ -1,0 +1,275 @@
+{
+  "RNSCA-RVIRS_npp_d20141107_t1019117_e1026294_b00001_c20141118022206305000_all-_dev.h5": {
+    "start_at": "2014-11-18 21:38:29 UTC",
+    "end_at": "2014-11-18 21:40:32 UTC",
+    "duration": 123.028070507,
+    "file_size": 151,
+    "duration_per_byte": 7.727311609547311e-07
+  },
+  "RNSCA-RVIRS_npp_d20141107_t1837376_e1844091_b00001_c20141118023209967000_all-_dev.h5": {
+    "start_at": "2014-11-18 21:40:32 UTC",
+    "end_at": "2014-11-18 21:42:53 UTC",
+    "duration": 141.037766327,
+    "file_size": 200,
+    "duration_per_byte": 6.695514279374037e-07
+  },
+  "RNSCA-RVIRS_npp_d20141101_t2206425_e2217177_b00001_c20141118021807662000_all-_dev.h5": {
+    "start_at": "2014-11-18 21:42:53 UTC",
+    "end_at": "2014-11-18 21:47:03 UTC",
+    "duration": 249.990137315,
+    "file_size": 536,
+    "duration_per_byte": 4.4413425197126326e-07
+  },
+  "RNSCA-RVIRS_npp_d20141107_t1158465_e1209288_b00001_c20141118022444303000_all-_dev.h5": {
+    "start_at": "2014-11-18 21:47:03 UTC",
+    "end_at": "2014-11-18 21:50:20 UTC",
+    "duration": 196.930989235,
+    "file_size": 226,
+    "duration_per_byte": 8.298132325567945e-07
+  },
+  "RNSCA-RVIRS_npp_d20141107_t1339182_e1349178_b00001_c20141118022711979000_all-_dev.h5": {
+    "start_at": "2014-11-18 21:50:20 UTC",
+    "end_at": "2014-11-18 21:53:36 UTC",
+    "duration": 196.246920694,
+    "file_size": 209,
+    "duration_per_byte": 8.9232598205846e-07
+  },
+  "RNSCA-RVIRS_npp_d20141107_t1659300_e1705081_b00001_c20141118023031635000_all-_dev.h5": {
+    "start_at": "2014-11-18 21:53:36 UTC",
+    "end_at": "2014-11-18 21:55:32 UTC",
+    "duration": 115.02310833,
+    "file_size": 115,
+    "duration_per_byte": 9.48504259676725e-07
+  },
+  "RNSCA-RVIRS_npp_d20141107_t1519517_e1527378_b00001_c20141118022907541000_all-_dev.h5": {
+    "start_at": "2014-11-18 21:55:32 UTC",
+    "end_at": "2014-11-18 21:57:56 UTC",
+    "duration": 144.430064208,
+    "file_size": 157,
+    "duration_per_byte": 8.740177748255628e-07
+  },
+  "RNSCA-RVIRS_npp_d20141107_t2154231_e2204494_b00001_c20141118023700523000_all-_dev.h5": {
+    "start_at": "2014-11-18 21:57:56 UTC",
+    "end_at": "2014-11-18 22:01:59 UTC",
+    "duration": 242.777465374,
+    "file_size": 487,
+    "duration_per_byte": 4.750266983699067e-07
+  },
+  "RNSCA-RVIRS_npp_d20141101_t2027380_e2036478_b00001_c20141118021529856000_all-_dev.h5": {
+    "start_at": "2014-11-18 22:01:59 UTC",
+    "end_at": "2014-11-18 22:05:28 UTC",
+    "duration": 208.849356984,
+    "file_size": 416,
+    "duration_per_byte": 4.779681794239437e-07
+  },
+  "RNSCA-RVIRS_npp_d20141106_t2355052_e0003394_b00001_c20141118022018174000_all-_dev.h5": {
+    "start_at": "2014-11-18 22:05:28 UTC",
+    "end_at": "2014-11-18 22:09:23 UTC",
+    "duration": 235.711063858,
+    "file_size": 459,
+    "duration_per_byte": 4.896003665545024e-07
+  },
+  "RNSCA-RVIRS_npp_d20141107_t2015292_e2024177_b00001_c20141118023425225000_all-_dev.h5": {
+    "start_at": "2014-11-18 22:09:23 UTC",
+    "end_at": "2014-11-18 22:13:13 UTC",
+    "duration": 229.472957026,
+    "file_size": 378,
+    "duration_per_byte": 5.776951773617523e-07
+  },
+  "RNSCA-RVIRS_npp_d20141107_t2335500_e2344580_b00001_c20141118023920290000_all-_dev.h5": {
+    "start_at": "2014-11-18 22:13:13 UTC",
+    "end_at": "2014-11-18 22:16:42 UTC",
+    "duration": 209.480962465,
+    "file_size": 470,
+    "duration_per_byte": 4.2461338643332976e-07
+  },
+  "RNSCA-RVIRS_npp_d20141108_t1000552_e1006386_b00001_c20141118024039166000_all-_dev.h5": {
+    "start_at": "2014-11-18 22:16:42 UTC",
+    "end_at": "2014-11-18 22:18:55 UTC",
+    "duration": 133.10341464,
+    "file_size": 110,
+    "duration_per_byte": 1.1522378403049539e-06
+  },
+  "RNSCA-RVIRS_npp_d20141108_t1139597_e1150190_b00001_c20141118024312472000_all-_dev.h5": {
+    "start_at": "2014-11-18 22:18:55 UTC",
+    "end_at": "2014-11-18 22:22:38 UTC",
+    "duration": 222.664578259,
+    "file_size": 217,
+    "duration_per_byte": 9.782331917415373e-07
+  },
+  "RNSCA-RVIRS_npp_d20141108_t1320172_e1330488_b00001_c20141118024545642000_all-_dev.h5": {
+    "start_at": "2014-11-18 22:22:38 UTC",
+    "end_at": "2014-11-18 22:26:37 UTC",
+    "duration": 239.070622476,
+    "file_size": 220,
+    "duration_per_byte": 1.0360384765149125e-06
+  },
+  "RNSCA-RVIRS_npp_d20141108_t1500596_e1509090_b00001_c20141118024746265000_all-_dev.h5": {
+    "start_at": "2014-11-18 22:26:37 UTC",
+    "end_at": "2014-11-18 22:30:01 UTC",
+    "duration": 203.623867407,
+    "file_size": 166,
+    "duration_per_byte": 1.1678685187352962e-06
+  },
+  "RNSCA-RVIRS_npp_d20141108_t1641011_e1646480_b00001_c20141118024912450000_all-_dev.h5": {
+    "start_at": "2014-11-18 22:30:01 UTC",
+    "end_at": "2014-11-18 22:32:02 UTC",
+    "duration": 121.056568417,
+    "file_size": 116,
+    "duration_per_byte": 9.899965027500782e-07
+  },
+  "RNSCA-RVIRS_npp_d20141108_t1819230_e1825294_b00001_c20141118025041652000_all-_dev.h5": {
+    "start_at": "2014-11-18 22:32:02 UTC",
+    "end_at": "2014-11-18 22:34:25 UTC",
+    "duration": 143.106975358,
+    "file_size": 163,
+    "duration_per_byte": 8.354060308740395e-07
+  },
+  "RNSCA-RVIRS_npp_d20141108_t1956585_e2005291_b00001_c20141118025248832000_all-_dev.h5": {
+    "start_at": "2014-11-18 22:34:25 UTC",
+    "end_at": "2014-11-18 22:37:38 UTC",
+    "duration": 192.878688765,
+    "file_size": 342,
+    "duration_per_byte": 5.374220640830516e-07
+  },
+  "RNSCA-RVIRS_npp_d20141108_t2135400_e2145591_b00001_c20141118025525452000_all-_dev.h5": {
+    "start_at": "2014-11-18 22:37:38 UTC",
+    "end_at": "2014-11-18 22:40:46 UTC",
+    "duration": 188.739235525,
+    "file_size": 485,
+    "duration_per_byte": 3.70842899685546e-07
+  },
+  "RNSCA-RVIRS_npp_d20141108_t2316312_e2326184_b00001_c20141118025754331000_all-_dev.h5": {
+    "start_at": "2014-11-18 22:40:46 UTC",
+    "end_at": "2014-11-18 22:44:32 UTC",
+    "duration": 225.975536425,
+    "file_size": 490,
+    "duration_per_byte": 4.397458913357955e-07
+  },
+  "RNSCA-RVIRS_npp_d20141109_t1121183_e1131180_b00001_c20141118030022231000_all-_dev.h5": {
+    "start_at": "2014-11-18 22:44:32 UTC",
+    "end_at": "2014-11-18 22:48:30 UTC",
+    "duration": 237.334898551,
+    "file_size": 211,
+    "duration_per_byte": 1.0698425268344825e-06
+  },
+  "RNSCA-RVIRS_npp_d20141109_t1301376_e1312092_b00001_c20141118030257542000_all-_dev.h5": {
+    "start_at": "2014-11-18 22:48:30 UTC",
+    "end_at": "2014-11-18 22:52:37 UTC",
+    "duration": 247.178456165,
+    "file_size": 221,
+    "duration_per_byte": 1.0639008785492489e-06
+  },
+  "RNSCA-RVIRS_npp_d20141109_t1442093_e1450490_b00001_c20141118030505508000_all-_dev.h5": {
+    "start_at": "2014-11-18 22:52:37 UTC",
+    "end_at": "2014-11-18 22:55:47 UTC",
+    "duration": 190.151977952,
+    "file_size": 179,
+    "duration_per_byte": 1.0129593034901421e-06
+  },
+  "RNSCA-RVIRS_npp_d20141109_t1622054_e1628280_b00001_c20141118030638467000_all-_dev.h5": {
+    "start_at": "2014-11-18 22:55:47 UTC",
+    "end_at": "2014-11-18 22:58:02 UTC",
+    "duration": 134.806319956,
+    "file_size": 125,
+    "duration_per_byte": 1.022775016152525e-06
+  },
+  "RNSCA-RVIRS_npp_d20141109_t1801030_e1806480_b00001_c20141118030804909000_all-_dev.h5": {
+    "start_at": "2014-11-18 22:58:02 UTC",
+    "end_at": "2014-11-18 23:00:41 UTC",
+    "duration": 158.81566397,
+    "file_size": 146,
+    "duration_per_byte": 1.0321825723972325e-06
+  },
+  "RNSCA-RVIRS_npp_d20141109_t1938331_e1946388_b00001_c20141118031008255000_all-_dev.h5": {
+    "start_at": "2014-11-18 23:00:41 UTC",
+    "end_at": "2014-11-18 23:04:51 UTC",
+    "duration": 250.073489426,
+    "file_size": 314,
+    "duration_per_byte": 7.582554832564898e-07
+  },
+  "RNSCA-RVIRS_npp_d20141109_t2117092_e2127088_b00001_c20141118031240063000_all-_dev.h5": {
+    "start_at": "2014-11-18 23:04:51 UTC",
+    "end_at": "2014-11-18 23:08:31 UTC",
+    "duration": 220.452417057,
+    "file_size": 467,
+    "duration_per_byte": 4.4978547224277885e-07
+  },
+  "RNSCA-RVIRS_npp_d20141109_t2257231_e2307281_b00001_c20141118031513537000_all-_dev.h5": {
+    "start_at": "2014-11-18 23:08:31 UTC",
+    "end_at": "2014-11-18 23:11:39 UTC",
+    "duration": 188.231314058,
+    "file_size": 494,
+    "duration_per_byte": 3.6307455664393514e-07
+  },
+  "RNSCA-RVIRS_npp_d20141110_t0040545_e0046593_b00001_c20141118031644712000_all-_dev.h5": {
+    "start_at": "2014-11-18 23:11:39 UTC",
+    "end_at": "2014-11-18 23:15:31 UTC",
+    "duration": 231.478141849,
+    "file_size": 311,
+    "duration_per_byte": 7.089889216406338e-07
+  },
+  "RNSCA-RVIRS_npp_d20141110_t1102387_e1111592_b00001_c20141118031903334000_all-_dev.h5": {
+    "start_at": "2014-11-18 23:15:31 UTC",
+    "end_at": "2014-11-18 23:19:26 UTC",
+    "duration": 234.645772964,
+    "file_size": 197,
+    "duration_per_byte": 1.130774959286549e-06
+  },
+  "RNSCA-RVIRS_npp_d20141110_t1243051_e1253278_b00001_c20141118032136976000_all-_dev.h5": {
+    "start_at": "2014-11-18 23:19:26 UTC",
+    "end_at": "2014-11-18 23:23:08 UTC",
+    "duration": 221.891583472,
+    "file_size": 220,
+    "duration_per_byte": 9.615348190662782e-07
+  },
+  "RNSCA-RVIRS_npp_d20141110_t1603294_e1610080_b00001_c20141118032315605000_all-_dev.h5": {
+    "start_at": "2014-11-18 23:23:08 UTC",
+    "end_at": "2014-11-18 23:25:32 UTC",
+    "duration": 144.49726552,
+    "file_size": 133,
+    "duration_per_byte": 1.0347823462074868e-06
+  },
+  "RNSCA-RVIRS_npp_d20141110_t1742322_e1748084_b00001_c20141118032439427000_all-_dev.h5": {
+    "start_at": "2014-11-18 23:25:32 UTC",
+    "end_at": "2014-11-18 23:28:04 UTC",
+    "duration": 152.075429957,
+    "file_size": 131,
+    "duration_per_byte": 1.102346902838009e-06
+  },
+  "RNSCA-RVIRS_npp_d20141110_t1920024_e1927486_b00001_c20141118032636556000_all-_dev.h5": {
+    "start_at": "2014-11-18 23:28:04 UTC",
+    "end_at": "2014-11-18 23:31:59 UTC",
+    "duration": 234.537390765,
+    "file_size": 286,
+    "duration_per_byte": 7.805084198856549e-07
+  },
+  "RNSCA-RVIRS_npp_d20141110_t2058385_e2108185_b00001_c20141118032903298000_all-_dev.h5": {
+    "start_at": "2014-11-18 23:31:59 UTC",
+    "end_at": "2014-11-18 23:36:01 UTC",
+    "duration": 242.343888624,
+    "file_size": 440,
+    "duration_per_byte": 5.2502764301578e-07
+  },
+  "RNSCA-RVIRS_npp_d20141110_t2237555_e2248484_b00001_c20141118033145800000_all-_dev.h5": {
+    "start_at": "2014-11-18 23:36:01 UTC",
+    "end_at": "2014-11-18 23:40:16 UTC",
+    "duration": 255.336432659,
+    "file_size": 523,
+    "duration_per_byte": 4.6515138590862394e-07
+  },
+  "RNSCA-RVIRS_npp_d20141111_t0020531_e0028286_b00001_c20141118033341960000_all-_dev.h5": {
+    "start_at": "2014-11-18 23:40:16 UTC",
+    "end_at": "2014-11-18 23:44:27 UTC",
+    "duration": 250.222187775,
+    "file_size": 400,
+    "duration_per_byte": 5.95225832384482e-07
+  },
+  "RNSCA-RVIRS_npp_d20141111_t1043448_e1052280_b00001_c20141118033550742000_all-_dev.h5": {
+    "start_at": "2014-11-18 23:44:27 UTC",
+    "end_at": "2014-11-18 23:47:06 UTC",
+    "duration": 159.305366814,
+    "file_size": 181,
+    "duration_per_byte": 8.388219522956386e-07
+  }
+}

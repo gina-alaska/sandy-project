@@ -1,0 +1,275 @@
+{
+  "npp.14305.2026.zero": {
+    "start_at": "2014-11-19 05:51:58 UTC",
+    "end_at": "2014-11-19 05:55:55 UTC",
+    "duration": 237.346502048,
+    "file_size": 986,
+    "duration_per_byte": 2.2939795467760292e-07
+  },
+  "npp.14305.2206.zero": {
+    "start_at": "2014-11-19 05:55:55 UTC",
+    "end_at": "2014-11-19 06:01:33 UTC",
+    "duration": 337.65257083,
+    "file_size": 1114,
+    "duration_per_byte": 2.8899109439191224e-07
+  },
+  "npp.14310.2354.zero": {
+    "start_at": "2014-11-19 06:01:33 UTC",
+    "end_at": "2014-11-19 06:05:13 UTC",
+    "duration": 219.860710302,
+    "file_size": 920,
+    "duration_per_byte": 2.276858164414601e-07
+  },
+  "npp.14311.1018.zero": {
+    "start_at": "2014-11-19 06:05:13 UTC",
+    "end_at": "2014-11-19 06:08:14 UTC",
+    "duration": 181.063614391,
+    "file_size": 785,
+    "duration_per_byte": 2.1970667983189729e-07
+  },
+  "npp.14311.1158.zero": {
+    "start_at": "2014-11-19 06:08:14 UTC",
+    "end_at": "2014-11-19 06:12:39 UTC",
+    "duration": 264.880413989,
+    "file_size": 1150,
+    "duration_per_byte": 2.1951143863385335e-07
+  },
+  "npp.14311.1338.zero": {
+    "start_at": "2014-11-19 06:12:39 UTC",
+    "end_at": "2014-11-19 06:16:47 UTC",
+    "duration": 247.906905027,
+    "file_size": 1078,
+    "duration_per_byte": 2.1925066739759977e-07
+  },
+  "npp.14311.1519.zero": {
+    "start_at": "2014-11-19 06:16:47 UTC",
+    "end_at": "2014-11-19 06:20:01 UTC",
+    "duration": 193.956679954,
+    "file_size": 840,
+    "duration_per_byte": 2.2014274787026748e-07
+  },
+  "npp.14311.1659.zero": {
+    "start_at": "2014-11-19 06:20:01 UTC",
+    "end_at": "2014-11-19 06:22:21 UTC",
+    "duration": 140.213063866,
+    "file_size": 607,
+    "duration_per_byte": 2.202812422484566e-07
+  },
+  "npp.14311.1837.zero": {
+    "start_at": "2014-11-19 06:22:21 UTC",
+    "end_at": "2014-11-19 06:25:06 UTC",
+    "duration": 165.319640997,
+    "file_size": 703,
+    "duration_per_byte": 2.2404241175566583e-07
+  },
+  "npp.14311.2014.zero": {
+    "start_at": "2014-11-19 06:25:06 UTC",
+    "end_at": "2014-11-19 06:29:31 UTC",
+    "duration": 264.759670859,
+    "file_size": 950,
+    "duration_per_byte": 2.6578368222989533e-07
+  },
+  "npp.14311.2153.zero": {
+    "start_at": "2014-11-19 06:29:31 UTC",
+    "end_at": "2014-11-19 06:33:50 UTC",
+    "duration": 258.777198691,
+    "file_size": 1086,
+    "duration_per_byte": 2.2721822342805226e-07
+  },
+  "npp.14311.2335.zero": {
+    "start_at": "2014-11-19 06:33:50 UTC",
+    "end_at": "2014-11-19 06:37:48 UTC",
+    "duration": 238.06567534,
+    "file_size": 987,
+    "duration_per_byte": 2.299110077870043e-07
+  },
+  "npp.14312.1000.zero": {
+    "start_at": "2014-11-19 06:37:48 UTC",
+    "end_at": "2014-11-19 06:40:00 UTC",
+    "duration": 132.308856593,
+    "file_size": 571,
+    "duration_per_byte": 2.2064185069433327e-07
+  },
+  "npp.14312.1139.zero": {
+    "start_at": "2014-11-19 06:40:00 UTC",
+    "end_at": "2014-11-19 06:44:16 UTC",
+    "duration": 255.57945635,
+    "file_size": 1109,
+    "duration_per_byte": 2.196702278135864e-07
+  },
+  "npp.14312.1320.zero": {
+    "start_at": "2014-11-19 06:44:16 UTC",
+    "end_at": "2014-11-19 06:48:32 UTC",
+    "duration": 256.483563357,
+    "file_size": 1114,
+    "duration_per_byte": 2.1948144921207526e-07
+  },
+  "npp.14312.1500.zero": {
+    "start_at": "2014-11-19 06:48:32 UTC",
+    "end_at": "2014-11-19 06:51:57 UTC",
+    "duration": 204.48219597,
+    "file_size": 878,
+    "duration_per_byte": 2.219760387971911e-07
+  },
+  "npp.14312.1640.zero": {
+    "start_at": "2014-11-19 06:51:57 UTC",
+    "end_at": "2014-11-19 06:54:22 UTC",
+    "duration": 145.203345816,
+    "file_size": 626,
+    "duration_per_byte": 2.2114806986655878e-07
+  },
+  "npp.14312.1818.zero": {
+    "start_at": "2014-11-19 06:54:22 UTC",
+    "end_at": "2014-11-19 06:56:56 UTC",
+    "duration": 153.701300718,
+    "file_size": 638,
+    "duration_per_byte": 2.296495203219429e-07
+  },
+  "npp.14312.1956.zero": {
+    "start_at": "2014-11-19 06:56:56 UTC",
+    "end_at": "2014-11-19 07:00:55 UTC",
+    "duration": 239.749660109,
+    "file_size": 900,
+    "duration_per_byte": 2.538825932012528e-07
+  },
+  "npp.14312.2134.zero": {
+    "start_at": "2014-11-19 07:00:55 UTC",
+    "end_at": "2014-11-19 07:05:40 UTC",
+    "duration": 284.991488611,
+    "file_size": 1108,
+    "duration_per_byte": 2.4529525876668405e-07
+  },
+  "npp.14312.2315.zero": {
+    "start_at": "2014-11-19 07:05:40 UTC",
+    "end_at": "2014-11-19 07:10:16 UTC",
+    "duration": 275.275585945,
+    "file_size": 1052,
+    "duration_per_byte": 2.4937274063025424e-07
+  },
+  "npp.14313.1120.zero": {
+    "start_at": "2014-11-19 07:10:16 UTC",
+    "end_at": "2014-11-19 07:14:24 UTC",
+    "duration": 248.86308435,
+    "file_size": 1077,
+    "duration_per_byte": 2.2033577136042328e-07
+  },
+  "npp.14313.1301.zero": {
+    "start_at": "2014-11-19 07:14:24 UTC",
+    "end_at": "2014-11-19 07:18:46 UTC",
+    "duration": 261.618050285,
+    "file_size": 1132,
+    "duration_per_byte": 2.2024687692365973e-07
+  },
+  "npp.14313.1441.zero": {
+    "start_at": "2014-11-19 07:18:46 UTC",
+    "end_at": "2014-11-19 07:22:22 UTC",
+    "duration": 215.769136214,
+    "file_size": 933,
+    "duration_per_byte": 2.2050235149014692e-07
+  },
+  "npp.14313.1621.zero": {
+    "start_at": "2014-11-19 07:22:22 UTC",
+    "end_at": "2014-11-19 07:24:59 UTC",
+    "duration": 157.12968198,
+    "file_size": 675,
+    "duration_per_byte": 2.217441547089505e-07
+  },
+  "npp.14313.1800.zero": {
+    "start_at": "2014-11-19 07:24:59 UTC",
+    "end_at": "2014-11-19 07:27:28 UTC",
+    "duration": 148.607775235,
+    "file_size": 622,
+    "duration_per_byte": 2.2782540110350027e-07
+  },
+  "npp.14313.1937.zero": {
+    "start_at": "2014-11-19 07:27:28 UTC",
+    "end_at": "2014-11-19 07:31:51 UTC",
+    "duration": 263.673983635,
+    "file_size": 872,
+    "duration_per_byte": 2.882827190366712e-07
+  },
+  "npp.14313.2116.zero": {
+    "start_at": "2014-11-19 07:31:51 UTC",
+    "end_at": "2014-11-19 07:36:25 UTC",
+    "duration": 273.513391434,
+    "file_size": 1075,
+    "duration_per_byte": 2.4246815661062606e-07
+  },
+  "npp.14313.2256.zero": {
+    "start_at": "2014-11-19 07:36:25 UTC",
+    "end_at": "2014-11-19 07:40:47 UTC",
+    "duration": 262.279872466,
+    "file_size": 1086,
+    "duration_per_byte": 2.3025232646087566e-07
+  },
+  "npp.14314.0040.zero": {
+    "start_at": "2014-11-19 07:40:47 UTC",
+    "end_at": "2014-11-19 07:43:20 UTC",
+    "duration": 153.331067362,
+    "file_size": 642,
+    "duration_per_byte": 2.2763358235132733e-07
+  },
+  "npp.14314.1102.zero": {
+    "start_at": "2014-11-19 07:43:20 UTC",
+    "end_at": "2014-11-19 07:47:13 UTC",
+    "duration": 232.553314018,
+    "file_size": 1005,
+    "duration_per_byte": 2.2053102128636932e-07
+  },
+  "npp.14314.1242.zero": {
+    "start_at": "2014-11-19 07:47:13 UTC",
+    "end_at": "2014-11-19 07:51:31 UTC",
+    "duration": 258.458994848,
+    "file_size": 1119,
+    "duration_per_byte": 2.2016866901277911e-07
+  },
+  "npp.14314.1603.zero": {
+    "start_at": "2014-11-19 07:51:31 UTC",
+    "end_at": "2014-11-19 07:54:18 UTC",
+    "duration": 166.33053969,
+    "file_size": 716,
+    "duration_per_byte": 2.214178948555284e-07
+  },
+  "npp.14314.1742.zero": {
+    "start_at": "2014-11-19 07:54:18 UTC",
+    "end_at": "2014-11-19 07:56:45 UTC",
+    "duration": 147.635529476,
+    "file_size": 604,
+    "duration_per_byte": 2.3291651333425887e-07
+  },
+  "npp.14314.1919.zero": {
+    "start_at": "2014-11-19 07:56:45 UTC",
+    "end_at": "2014-11-19 08:00:53 UTC",
+    "duration": 248.128599217,
+    "file_size": 837,
+    "duration_per_byte": 2.8267975405139007e-07
+  },
+  "npp.14314.2057.zero": {
+    "start_at": "2014-11-19 08:00:53 UTC",
+    "end_at": "2014-11-19 08:05:07 UTC",
+    "duration": 253.202151478,
+    "file_size": 1040,
+    "duration_per_byte": 2.320455387131516e-07
+  },
+  "npp.14314.2237.zero": {
+    "start_at": "2014-11-19 08:05:07 UTC",
+    "end_at": "2014-11-19 08:09:41 UTC",
+    "duration": 274.553488113,
+    "file_size": 1150,
+    "duration_per_byte": 2.2756632213151551e-07
+  },
+  "npp.14315.0020.zero": {
+    "start_at": "2014-11-19 08:09:41 UTC",
+    "end_at": "2014-11-19 08:12:58 UTC",
+    "duration": 196.981584831,
+    "file_size": 817,
+    "duration_per_byte": 2.2982655786920363e-07
+  },
+  "npp.14315.1043.zero": {
+    "start_at": "2014-11-19 08:12:58 UTC",
+    "end_at": "2014-11-19 08:16:34 UTC",
+    "duration": 216.308685685,
+    "file_size": 939,
+    "duration_per_byte": 2.1962876987342255e-07
+  }
+}
