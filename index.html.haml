@@ -1,11 +1,41 @@
 !!!html5
-%html
+%html(ng-app='sandyPerformance')
   %head
     %title
       Sandy Processing Times Comparison
-    %script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js")
-    %script(src="http://code.highcharts.com/highcharts.js")
-    %script(src='js/chart-test.js')
+    %link(rel='stylesheet' href='bower_components/bootstrap/dist/css/bootstrap.min.css')
+    %script(src='bower_components/jquery/dist/jquery.min.js')
+    %script(src='bower_components/highcharts/highcharts.js')
+    %script(src='bower_components/bootstrap/dist/js/bootstrap.min.js')
+    %script(src='js/chart.js')
+
   %body
-    #rtstps-comparison-chart
-    #viirs_sdr-comparison-chart
+    %form#chartControl.form-inline(name='chartControl')
+      .form-group
+        %label
+          Data Type
+        %select#dataType.form-control(name='dataType')
+          %option(value='rtstps' selected) RT-STPS
+          %option(value='viirs_sdr') VIIRS SDR
+      .form-group
+        %label
+          Chart Type
+        %select#chartType.form-control(name='chartType')
+          %option(value='scatter' selected) Scatter
+          %option(value='column') Column
+      .form-group
+        %label
+          X Axis
+        %select#xAxis.form-control(name='xAxis')
+          %option(value='duration') Duration (sec)
+          %option(value='size' selected) File Size (MB)
+          %option(value='name') Pass ID
+      .form-group
+        %label
+          Y Axis
+        %select#yAxis.form-control(name='yAxis')
+          %option(value='duration' selected) Duration (sec)
+          %option(value='size') File Size (MB)
+          %option(value='name') Pass ID
+
+    .chart

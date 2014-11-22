@@ -1,275 +1,197 @@
-{
-  "RNSCA-RVIRS_npp_d20141107_t2154231_e2204494_b00001_c20141118173700413000_all-_dev.h5": {
-    "start_at": "2014-11-18 18:52:43 UTC",
-    "end_at": "2014-11-18 18:55:02 UTC",
+[
+  {
+    "file": "RNSCA-RVIRS_npp_d20141107_t2154231_e2204494_b00001_c20141118173700413000_all-_dev.h5",
     "duration": 138.993162141,
-    "file_size": 487,
-    "duration_per_byte": 2.7195877840688283e-07
+    "size": 487
   },
-  "RNSCA-RVIRS_npp_d20141101_t2027380_e2036478_b00001_c20141118171533775000_all-_dev.h5": {
-    "start_at": "2014-11-18 18:55:02 UTC",
-    "end_at": "2014-11-18 18:57:22 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141101_t2027380_e2036478_b00001_c20141118171533775000_all-_dev.h5",
     "duration": 139.47841726,
-    "file_size": 416,
-    "duration_per_byte": 3.192073278530739e-07
+    "size": 416
   },
-  "RNSCA-RVIRS_npp_d20141101_t2206425_e2217177_b00001_c20141118171811590000_all-_dev.h5": {
-    "start_at": "2014-11-18 18:57:22 UTC",
-    "end_at": "2014-11-18 19:00:50 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141101_t2206425_e2217177_b00001_c20141118171811590000_all-_dev.h5",
     "duration": 208.747631799,
-    "file_size": 536,
-    "duration_per_byte": 3.7086252400029633e-07
+    "size": 536
   },
-  "RNSCA-RVIRS_npp_d20141107_t1837376_e1844091_b00001_c20141118173213583000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:00:50 UTC",
-    "end_at": "2014-11-18 19:02:58 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141107_t1837376_e1844091_b00001_c20141118173213583000_all-_dev.h5",
     "duration": 127.474510633,
-    "file_size": 200,
-    "duration_per_byte": 6.051623110795644e-07
+    "size": 200
   },
-  "RNSCA-RVIRS_npp_d20141106_t2355052_e0003394_b00001_c20141118172022136000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:02:58 UTC",
-    "end_at": "2014-11-18 19:05:14 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141106_t2355052_e0003394_b00001_c20141118172022136000_all-_dev.h5",
     "duration": 136.558836958,
-    "file_size": 459,
-    "duration_per_byte": 2.83649208215239e-07
+    "size": 459
   },
-  "RNSCA-RVIRS_npp_d20141107_t1019117_e1026294_b00001_c20141118172210488000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:05:14 UTC",
-    "end_at": "2014-11-18 19:07:18 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141107_t1019117_e1026294_b00001_c20141118172210488000_all-_dev.h5",
     "duration": 123.92142977,
-    "file_size": 151,
-    "duration_per_byte": 7.78342291305738e-07
+    "size": 151
   },
-  "RNSCA-RVIRS_npp_d20141107_t1158465_e1209288_b00001_c20141118172448371000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:07:18 UTC",
-    "end_at": "2014-11-18 19:09:27 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141107_t1158465_e1209288_b00001_c20141118172448371000_all-_dev.h5",
     "duration": 128.627337513,
-    "file_size": 226,
-    "duration_per_byte": 5.42000358356329e-07
+    "size": 226
   },
-  "RNSCA-RVIRS_npp_d20141107_t1339182_e1349178_b00001_c20141118172716090000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:09:27 UTC",
-    "end_at": "2014-11-18 19:11:36 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141107_t1339182_e1349178_b00001_c20141118172716090000_all-_dev.h5",
     "duration": 128.861869497,
-    "file_size": 209,
-    "duration_per_byte": 5.859291643515464e-07
+    "size": 209
   },
-  "RNSCA-RVIRS_npp_d20141107_t2015292_e2024177_b00001_c20141118173427044000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:11:36 UTC",
-    "end_at": "2014-11-18 19:14:01 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141107_t2015292_e2024177_b00001_c20141118173427044000_all-_dev.h5",
     "duration": 145.058303897,
-    "file_size": 378,
-    "duration_per_byte": 3.651823887381973e-07
+    "size": 378
   },
-  "RNSCA-RVIRS_npp_d20141107_t1519517_e1527378_b00001_c20141118172911655000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:14:01 UTC",
-    "end_at": "2014-11-18 19:16:02 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141107_t1519517_e1527378_b00001_c20141118172911655000_all-_dev.h5",
     "duration": 121.440545172,
-    "file_size": 157,
-    "duration_per_byte": 7.348968211492044e-07
+    "size": 157
   },
-  "RNSCA-RVIRS_npp_d20141107_t1659300_e1705081_b00001_c20141118173035316000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:16:02 UTC",
-    "end_at": "2014-11-18 19:18:03 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141107_t1659300_e1705081_b00001_c20141118173035316000_all-_dev.h5",
     "duration": 120.494268239,
-    "file_size": 115,
-    "duration_per_byte": 9.936205719934696e-07
+    "size": 115
   },
-  "RNSCA-RVIRS_npp_d20141107_t2335500_e2344580_b00001_c20141118173920070000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:18:03 UTC",
-    "end_at": "2014-11-18 19:20:17 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141107_t2335500_e2344580_b00001_c20141118173920070000_all-_dev.h5",
     "duration": 134.44319242,
-    "file_size": 470,
-    "duration_per_byte": 2.725134472584923e-07
+    "size": 470
   },
-  "RNSCA-RVIRS_npp_d20141108_t1000552_e1006386_b00001_c20141118174039053000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:20:17 UTC",
-    "end_at": "2014-11-18 19:22:22 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141108_t1000552_e1006386_b00001_c20141118174039053000_all-_dev.h5",
     "duration": 125.197340205,
-    "file_size": 110,
-    "duration_per_byte": 1.0837972360055583e-06
+    "size": 110
   },
-  "RNSCA-RVIRS_npp_d20141108_t1139597_e1150190_b00001_c20141118174311306000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:22:22 UTC",
-    "end_at": "2014-11-18 19:24:41 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141108_t1139597_e1150190_b00001_c20141118174311306000_all-_dev.h5",
     "duration": 138.231254145,
-    "file_size": 217,
-    "duration_per_byte": 6.072919276069603e-07
+    "size": 217
   },
-  "RNSCA-RVIRS_npp_d20141108_t1320172_e1330488_b00001_c20141118174544379000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:24:41 UTC",
-    "end_at": "2014-11-18 19:28:06 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141108_t1320172_e1330488_b00001_c20141118174544379000_all-_dev.h5",
     "duration": 204.897538971,
-    "file_size": 220,
-    "duration_per_byte": 8.87945712102207e-07
+    "size": 220
   },
-  "RNSCA-RVIRS_npp_d20141108_t1500596_e1509090_b00001_c20141118174744835000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:28:06 UTC",
-    "end_at": "2014-11-18 19:30:12 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141108_t1500596_e1509090_b00001_c20141118174744835000_all-_dev.h5",
     "duration": 126.27766829,
-    "file_size": 166,
-    "duration_per_byte": 7.242555369033305e-07
+    "size": 166
   },
-  "RNSCA-RVIRS_npp_d20141108_t1641011_e1646480_b00001_c20141118174911116000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:30:12 UTC",
-    "end_at": "2014-11-18 19:32:05 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141108_t1641011_e1646480_b00001_c20141118174911116000_all-_dev.h5",
     "duration": 113.497183563,
-    "file_size": 116,
-    "duration_per_byte": 9.281761102983212e-07
+    "size": 116
   },
-  "RNSCA-RVIRS_npp_d20141108_t1819230_e1825294_b00001_c20141118175040072000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:32:05 UTC",
-    "end_at": "2014-11-18 19:34:17 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141108_t1819230_e1825294_b00001_c20141118175040072000_all-_dev.h5",
     "duration": 132.141089972,
-    "file_size": 163,
-    "duration_per_byte": 7.7139121424878e-07
+    "size": 163
   },
-  "RNSCA-RVIRS_npp_d20141108_t1956585_e2005291_b00001_c20141118175247622000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:34:17 UTC",
-    "end_at": "2014-11-18 19:36:44 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141108_t1956585_e2005291_b00001_c20141118175247622000_all-_dev.h5",
     "duration": 146.057321859,
-    "file_size": 342,
-    "duration_per_byte": 4.0696267633560404e-07
+    "size": 342
   },
-  "RNSCA-RVIRS_npp_d20141108_t2135400_e2145591_b00001_c20141118175523987000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:36:44 UTC",
-    "end_at": "2014-11-18 19:39:13 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141108_t2135400_e2145591_b00001_c20141118175523987000_all-_dev.h5",
     "duration": 149.480361316,
-    "file_size": 485,
-    "duration_per_byte": 2.937053892492106e-07
+    "size": 485
   },
-  "RNSCA-RVIRS_npp_d20141108_t2316312_e2326184_b00001_c20141118175753013000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:39:13 UTC",
-    "end_at": "2014-11-18 19:41:38 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141108_t2316312_e2326184_b00001_c20141118175753013000_all-_dev.h5",
     "duration": 145.345886827,
-    "file_size": 490,
-    "duration_per_byte": 2.828414861444255e-07
+    "size": 490
   },
-  "RNSCA-RVIRS_npp_d20141109_t1121183_e1131180_b00001_c20141118180020815000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:41:38 UTC",
-    "end_at": "2014-11-18 19:44:04 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141109_t1121183_e1131180_b00001_c20141118180020815000_all-_dev.h5",
     "duration": 145.196247123,
-    "file_size": 211,
-    "duration_per_byte": 6.545060202158786e-07
+    "size": 211
   },
-  "RNSCA-RVIRS_npp_d20141109_t1301376_e1312092_b00001_c20141118180256105000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:44:04 UTC",
-    "end_at": "2014-11-18 19:47:39 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141109_t1301376_e1312092_b00001_c20141118180256105000_all-_dev.h5",
     "duration": 215.322708247,
-    "file_size": 221,
-    "duration_per_byte": 9.267879653826582e-07
+    "size": 221
   },
-  "RNSCA-RVIRS_npp_d20141109_t1442093_e1450490_b00001_c20141118180504333000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:47:39 UTC",
-    "end_at": "2014-11-18 19:49:53 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141109_t1442093_e1450490_b00001_c20141118180504333000_all-_dev.h5",
     "duration": 134.464137113,
-    "file_size": 179,
-    "duration_per_byte": 7.163044010447792e-07
+    "size": 179
   },
-  "RNSCA-RVIRS_npp_d20141109_t1622054_e1628280_b00001_c20141118180637238000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:49:53 UTC",
-    "end_at": "2014-11-18 19:52:04 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141109_t1622054_e1628280_b00001_c20141118180637238000_all-_dev.h5",
     "duration": 131.01065803,
-    "file_size": 125,
-    "duration_per_byte": 9.939773441372866e-07
+    "size": 125
   },
-  "RNSCA-RVIRS_npp_d20141109_t1801030_e1806480_b00001_c20141118180803667000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:52:04 UTC",
-    "end_at": "2014-11-18 19:54:16 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141109_t1801030_e1806480_b00001_c20141118180803667000_all-_dev.h5",
     "duration": 132.142037481,
-    "file_size": 146,
-    "duration_per_byte": 8.58824027551305e-07
+    "size": 146
   },
-  "RNSCA-RVIRS_npp_d20141109_t1938331_e1946388_b00001_c20141118181006059000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:54:16 UTC",
-    "end_at": "2014-11-18 19:56:52 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141109_t1938331_e1946388_b00001_c20141118181006059000_all-_dev.h5",
     "duration": 155.779889926,
-    "file_size": 314,
-    "duration_per_byte": 4.723449734260435e-07
+    "size": 314
   },
-  "RNSCA-RVIRS_npp_d20141109_t2117092_e2127088_b00001_c20141118181237913000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:56:52 UTC",
-    "end_at": "2014-11-18 19:59:31 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141109_t2117092_e2127088_b00001_c20141118181237913000_all-_dev.h5",
     "duration": 158.361962883,
-    "file_size": 467,
-    "duration_per_byte": 3.2310333092064343e-07
+    "size": 467
   },
-  "RNSCA-RVIRS_npp_d20141109_t2257231_e2307281_b00001_c20141118181511046000_all-_dev.h5": {
-    "start_at": "2014-11-18 19:59:31 UTC",
-    "end_at": "2014-11-18 20:02:10 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141109_t2257231_e2307281_b00001_c20141118181511046000_all-_dev.h5",
     "duration": 159.677263827,
-    "file_size": 494,
-    "duration_per_byte": 3.0799738109590433e-07
+    "size": 494
   },
-  "RNSCA-RVIRS_npp_d20141110_t0040545_e0046593_b00001_c20141118181642380000_all-_dev.h5": {
-    "start_at": "2014-11-18 20:02:10 UTC",
-    "end_at": "2014-11-18 20:04:39 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141110_t0040545_e0046593_b00001_c20141118181642380000_all-_dev.h5",
     "duration": 148.853175207,
-    "file_size": 311,
-    "duration_per_byte": 4.559188670247708e-07
+    "size": 311
   },
-  "RNSCA-RVIRS_npp_d20141110_t1102387_e1111592_b00001_c20141118181900920000_all-_dev.h5": {
-    "start_at": "2014-11-18 20:04:39 UTC",
-    "end_at": "2014-11-18 20:07:10 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141110_t1102387_e1111592_b00001_c20141118181900920000_all-_dev.h5",
     "duration": 151.08962022,
-    "file_size": 197,
-    "duration_per_byte": 7.281118129458172e-07
+    "size": 197
   },
-  "RNSCA-RVIRS_npp_d20141110_t1243051_e1253278_b00001_c20141118182134289000_all-_dev.h5": {
-    "start_at": "2014-11-18 20:07:10 UTC",
-    "end_at": "2014-11-18 20:09:45 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141110_t1243051_e1253278_b00001_c20141118182134289000_all-_dev.h5",
     "duration": 155.246318773,
-    "file_size": 220,
-    "duration_per_byte": 6.727372832099283e-07
+    "size": 220
   },
-  "RNSCA-RVIRS_npp_d20141110_t1603294_e1610080_b00001_c20141118182312901000_all-_dev.h5": {
-    "start_at": "2014-11-18 20:09:45 UTC",
-    "end_at": "2014-11-18 20:11:56 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141110_t1603294_e1610080_b00001_c20141118182312901000_all-_dev.h5",
     "duration": 130.24137541,
-    "file_size": 133,
-    "duration_per_byte": 9.32692224555599e-07
+    "size": 133
   },
-  "RNSCA-RVIRS_npp_d20141110_t1742322_e1748084_b00001_c20141118182436516000_all-_dev.h5": {
-    "start_at": "2014-11-18 20:11:56 UTC",
-    "end_at": "2014-11-18 20:14:11 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141110_t1742322_e1748084_b00001_c20141118182436516000_all-_dev.h5",
     "duration": 135.101204179,
-    "file_size": 131,
-    "duration_per_byte": 9.793060853979914e-07
+    "size": 131
   },
-  "RNSCA-RVIRS_npp_d20141110_t1920024_e1927486_b00001_c20141118182633828000_all-_dev.h5": {
-    "start_at": "2014-11-18 20:14:11 UTC",
-    "end_at": "2014-11-18 20:16:47 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141110_t1920024_e1927486_b00001_c20141118182633828000_all-_dev.h5",
     "duration": 156.151718931,
-    "file_size": 286,
-    "duration_per_byte": 5.196516044104108e-07
+    "size": 286
   },
-  "RNSCA-RVIRS_npp_d20141110_t2058385_e2108185_b00001_c20141118182900667000_all-_dev.h5": {
-    "start_at": "2014-11-18 20:16:47 UTC",
-    "end_at": "2014-11-18 20:19:36 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141110_t2058385_e2108185_b00001_c20141118182900667000_all-_dev.h5",
     "duration": 169.035018151,
-    "file_size": 440,
-    "duration_per_byte": 3.6620711861499835e-07
+    "size": 440
   },
-  "RNSCA-RVIRS_npp_d20141110_t2237555_e2248484_b00001_c20141118183143228000_all-_dev.h5": {
-    "start_at": "2014-11-18 20:19:36 UTC",
-    "end_at": "2014-11-18 20:22:25 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141110_t2237555_e2248484_b00001_c20141118183143228000_all-_dev.h5",
     "duration": 169.391520001,
-    "file_size": 523,
-    "duration_per_byte": 3.0858385334638335e-07
+    "size": 523
   },
-  "RNSCA-RVIRS_npp_d20141111_t0020531_e0028286_b00001_c20141118183338921000_all-_dev.h5": {
-    "start_at": "2014-11-18 20:22:25 UTC",
-    "end_at": "2014-11-18 20:25:12 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141111_t0020531_e0028286_b00001_c20141118183338921000_all-_dev.h5",
     "duration": 166.467636126,
-    "file_size": 400,
-    "duration_per_byte": 3.95991411310309e-07
+    "size": 400
   },
-  "RNSCA-RVIRS_npp_d20141111_t1043448_e1052280_b00001_c20141118183547957000_all-_dev.h5": {
-    "start_at": "2014-11-18 20:25:12 UTC",
-    "end_at": "2014-11-18 20:27:48 UTC",
+  {
+    "file": "RNSCA-RVIRS_npp_d20141111_t1043448_e1052280_b00001_c20141118183547957000_all-_dev.h5",
     "duration": 156.115880161,
-    "file_size": 181,
-    "duration_per_byte": 8.220277194672238e-07
+    "size": 181
   }
-}
+]
