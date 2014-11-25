@@ -52,5 +52,69 @@
       </div>
     </form>
     <div class='chart'></div>
+    <div id='description' style='margin: 20px'>
+      <ul class='nav nav-tabs'>
+        <li class='active'>
+          <a data-toggle='tab' href='#hpc'>High Performance Compute</a>
+        </li>
+        <li>
+          <a data-toggle='tab' href='#bc'>Base Compute</a>
+        </li>
+        <li>
+          <a data-toggle='tab' href='#bm'>Bare Metal</a>
+        </li>
+        <li>
+          <a data-toggle='tab' href='#vm'>Virtual Machine</a>
+        </li>
+        <li>
+          <a data-toggle='tab' href='#ssd'>SSD Raid 0</a>
+        </li>
+        <li>
+          <a data-toggle='tab' href='#spin'>Spinning Disk Raid 1</a>
+        </li>
+        <li>
+          <a data-toggle='tab' href='#10g'>10 Gigabit</a>
+        </li>
+      </ul>
+      <div class='tab-content'>
+        <div class='tab-pane active' id='hpc'>
+          <dl>
+            <dt>CPU Speed</dt>
+            <dd>3.5 GHz</dd>
+            <dt>CPU Count</dt>
+            <dd>2x6</dd>
+            <dt>Memory</dt>
+            <dd>256 GB</dd>
+          </dl>
+        </div>
+        <div class='tab-pane' id='bc'>
+          <dl>
+            <dt>CPU Speed</dt>
+            <dd>2.1 GHz</dd>
+            <dt>CPU Count</dt>
+            <dd>2x6</dd>
+            <dt>Memory</dt>
+            <dd>128 GB</dd>
+          </dl>
+        </div>
+        <div class='tab-pane' id='bm'>
+          Processing was done on a physical machine, with no virtualization layers.
+        </div>
+        <div class='tab-pane' id='vm'>
+          <strong>Virtualization has not been tested yet</strong>
+          Processing was done on a virtual machine, hosted on the described physical machine
+        </div>
+        <div class='tab-pane' id='ssd'>
+          Two SSD Disks in RAID 0 were used as scratch space
+        </div>
+        <div class='tab-pane' id='spin'>
+          Two 7200 RPM disks in RAID 1 were used as scratch space
+        </div>
+        <div class='tab-pane' id='10g'>
+          <strong>10Gb Scratch has not been tested yet</strong>
+          GlusterFS 3.6 with two-copy replication provided over a 10Gb network was used as scratch space
+        </div>
+      </div>
+    </div>
   </body>
 </html>

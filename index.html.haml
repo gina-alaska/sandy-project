@@ -39,3 +39,49 @@
           %option(value='name') Pass ID
 
     .chart
+
+    #description{style: 'margin: 20px'}
+      %ul.nav.nav-tabs
+        %li.active
+          %a(href="#hpc"){data: {toggle: 'tab'}} High Performance Compute
+        %li
+          %a(href="#bc"){data: {toggle: 'tab'}} Base Compute
+        %li
+          %a(href="#bm"){data: {toggle: 'tab'}} Bare Metal
+        %li
+          %a(href="#vm"){data: {toggle: 'tab'}} Virtual Machine
+        %li
+          %a(href="#ssd"){data: {toggle: 'tab'}} SSD Raid 0
+        %li
+          %a(href="#spin"){data: {toggle: 'tab'}} Spinning Disk Raid 1
+        %li
+          %a(href="#10g"){data: {toggle: 'tab'}} 10 Gigabit
+      .tab-content
+        #hpc.tab-pane.active
+          %dl
+            %dt CPU Speed
+            %dd 3.5 GHz
+            %dt CPU Count
+            %dd 2x6
+            %dt Memory
+            %dd 256 GB
+        #bc.tab-pane
+          %dl
+            %dt CPU Speed
+            %dd 2.1 GHz
+            %dt CPU Count
+            %dd 2x6
+            %dt Memory
+            %dd 128 GB
+        #bm.tab-pane
+          Processing was done on a physical machine, with no virtualization layers.
+        #vm.tab-pane
+          %strong Virtualization has not been tested yet
+          Processing was done on a virtual machine, hosted on the described physical machine
+        #ssd.tab-pane
+          Two SSD Disks in RAID 0 were used as scratch space
+        #spin.tab-pane
+          Two 7200 RPM disks in RAID 1 were used as scratch space
+        #10g.tab-pane
+          %strong 10Gb Scratch has not been tested yet
+          GlusterFS 3.6 with two-copy replication provided over a 10Gb network was used as scratch space
