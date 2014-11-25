@@ -29,7 +29,7 @@ $ ->
     color: '#4B8A64'
   },{
     name: 'BareMetal Base Compute Node - 10G'
-    file: 'bm-hpc-ssd_r0'
+    file: 'bm-hpc-10g'
     color: '#736AC7'
   },{
     name: 'Virtual Machine Base Compute Node - SSD Raid 0'
