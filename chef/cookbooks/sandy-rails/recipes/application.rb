@@ -1,3 +1,4 @@
+include_recipe "git"
 include_recipe "sandy::packages"
 include_recipe "sandy::ruby"
 include_recipe "postgresql::client"

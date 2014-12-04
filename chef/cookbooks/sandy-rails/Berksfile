@@ -14,5 +14,6 @@ cookbook 'runit'
 cookbook 'yum-epel'
 cookbook 'yum-gina', git: 'git@github.com:gina-alaska/yum-gina-cookbook'
 cookbook 'redisio'
+cookbook 'git'
 
 metadata
