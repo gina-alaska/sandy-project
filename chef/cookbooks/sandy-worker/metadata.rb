@@ -6,5 +6,5 @@ description      'Installs/Configures sandy-worker'
 long_description 'Installs/Configures sandy-worker'
 version          '0.1.0'
 
-depends 'sandy-rails'
+depends 'sandy'
 depends 'lvm'

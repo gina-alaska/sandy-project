@@ -1,6 +1,7 @@
 source "https://supermarket.getchef.com"
 
-cookbook 'sandy-rails', path: '../sandy-rails'
+cookbook 'sandy', path: '../sandy-rails'
 cookbook 'lvm'
+cookbook 'yum-gina', git: 'git@github.com:gina-alaska/yum-gina-cookbook'
 
 metadata
