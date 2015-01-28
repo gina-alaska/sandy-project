@@ -1,0 +1,6 @@
+source "https://supermarket.getchef.com"
+
+cookbook 'sandy-rails', path: '../sandy-rails'
+cookbook 'lvm'
+
+metadata
