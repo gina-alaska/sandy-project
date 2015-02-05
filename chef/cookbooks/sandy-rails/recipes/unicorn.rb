@@ -29,13 +29,15 @@ runit_service 'unicorn' do
   log true
   default_logger true
   env({
-    "SECRET_KEY_BASE" => node['sandy']['rails']['secret_key_base']
+    "SECRET_KEY_BASE" => node['sandy']['rails']['secret_key_base'],
+    "SANDY_SCRATCH_PATH" => node['sandy']['secrets']['scratch_path'],
+    "SANDY_SHARED_PATH" => node['sandy']['secrets']['shared_path']
   })
   options({
     app: "#{node['sandy']['paths']['application']}",
     user: node['sandy']['account'],
     unicorn_config_path: node['unicorn']['config_path'],
     rubyversion: node['sandy']['ruby']['version'],
-    pid_dir: "#{node['sandy']['paths']['application']}/shared/tmp/unicorn.pid"
+    pid_dir: "#{node['sandy']['paths']['application']}/tmp/unicorn.pid"
   })
 end

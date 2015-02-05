@@ -75,13 +75,17 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       },
       cspp: {
         user: 'vagrant'
+      },
+      polar2grid: {
+        user: 'vagrant'
       }
     }
 
     chef.run_list = [
-      "role[sandy-web-fullstack]",
+      #"role[sandy-web-fullstack]",
       "role[rtstps]",
-      "role[cspp-fullstack]"
+      "role[cspp-fullstack]",
+      "role[polar2grid]"
     ]
   end
 end

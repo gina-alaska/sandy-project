@@ -21,7 +21,7 @@ node.default['postgresql']['pg_hba'] += [{
 }]
 
 include_recipe 'postgresql::server'
-include_recipe 'database::default'
+include_recipe 'database::postgresql'
 include_recipe 'postgresql::ruby'
 
 postgresql_connection_info = {

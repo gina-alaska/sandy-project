@@ -3,7 +3,7 @@ default['unicorn_config_path'] = '/etc/unicorn'
 default['sandy']['account'] = "webdev"
 default['sandy']['environment'] = "production"
 default['sandy']['packages'] = Mash.new
-default['sandy']['ruby']['version'] = 'ruby-2.1.1'
+default['sandy']['ruby']['version'] = '2.1.1'
 default['sandy']['ruby']['package'] = 'gina-ruby-21'
 default['sandy']['git-repo'] = 'git://github.com/gina-alaska/sandy-rails'
 default['sandy']['git-revision'] = 'master'
@@ -12,10 +12,9 @@ default['sandy']['git-action'] = 'checkout'
 #Path configuration
 default['sandy']['paths'] = {
   application:   '/www/sandy',
-  shared:        '/www/sandy/shared',
-  config:        '/www/sandy/shared/config',
-  initializers:  '/www/sandy/shared/config/initializers',
-  public:        '/www/sandy/shared/public',
+  config:        '/www/sandy/config',
+  initializers:  '/www/sandy/config/initializers',
+  public:        '/www/sandy/public',
 }
 
 
@@ -35,6 +34,8 @@ default['sandy']['rails']['symlinks'] = {
 
 override['chruby']['default'] = 'embedded'
 
+default['sandy']['secrets']['scratch_path'] = "/tmp/scratch"
+default['sandy']['secrets']['shared_path'] = "/tmp/shared"
 
 default['sandy']['worker']['user']
 default['sandy']['worker']['scripts-path'] = '/opt/processing-scripts'
@@ -45,3 +46,6 @@ default['sandy']['worker']['scripts-git-action'] = 'checkout'
 default['sandy']['worker']['queues']['default'] = 1
 
 default['sandy']['database']['hostname'] = "localhost"
+
+default['sandy']['redis']['url'] = 'redis://localhost:6379'
+default['sandy']['redis']['namespace'] = 'sandy'

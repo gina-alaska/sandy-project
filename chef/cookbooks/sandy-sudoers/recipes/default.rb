@@ -16,6 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+include_recipe 'user'
 
 admins = Array.new
 data_bag("users").each do |account|
@@ -49,6 +50,7 @@ group "wheel" do
   action [:manage]
 end
 
-node.set['authorization']['sudo']['groups'] = [admin_group]
+node.set['authorization']['sudo']['passwordless'] = true
+node.set['authorization']['sudo']['groups'] = ['wheel']
 
 include_recipe "sudo::default"

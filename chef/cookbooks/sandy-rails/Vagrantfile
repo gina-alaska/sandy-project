@@ -1,17 +1,11 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-DEVVM_IP = '192.168.227.67'
-
 Vagrant.configure("2") do |config|
   config.vm.hostname = "sandy-development"
 
   config.vm.box = "opscode_centos-6.4_provisionerless"
   config.vm.box_url = "https://opscode-vm.s3.amazonaws.com/vagrant/opscode_centos-6.4_provisionerless.box"
-
-  config.vm.network :private_network, ip: DEVVM_IP
-
-  config.vm.synced_folder "../", "/www/sandy/current"
 
   config.vm.provider :virtualbox do |vb|
     vb.customize ["modifyvm", :id, "--memory", "4096"]
@@ -33,28 +27,23 @@ Vagrant.configure("2") do |config|
       },
       'unicorn' => {
         'listen' => '/var/run/unicorn/',
-        'pid' => '/www/sandy/current/tmp/pids/unicorn_sandy.pid',
-        'stderr_path' => '/www/sandy/current/log/unicorn.stderr.log',
-        'stdout_path' => '/www/sandy/current/log/unicorn.stdout.log'
+        'pid' => '/www/sandy/tmp/pids/unicorn_sandy.pid',
+        'stderr_path' => '/www/sandy/log/unicorn.stderr.log',
+        'stdout_path' => '/www/sandy/log/unicorn.stdout.log'
       },
       "sandy" => {
         'account' => "vagrant",
         'environment' => "development",
         'database' => {
-          'hostname' => DEVVM_IP,
+          'hostname' => '127.0.0.1',
           'database' => 'sandy_dev',
           'username' => 'sandy_dev',
           'password' => 'sandy_dev_postgres',
           'search_path' => 'sandy_dev,public'
         },
         'paths' => {
-          'shared' => "/www/sandy/current",
-          'config' => "/www/sandy/current/config",
-          'initializers' => "/www/sandy/current/config/initializers",
-          'archive' => "/www/sandy/current/archive",
-          'uploads' => "/www/sandy/current/uploads",
-          'cms' => "www/sandy/current/public/cms",
-          'repos' => "www/sandy/current/repos"
+          'config' => "/www/sandy/config",
+          'initializers' => "/www/sandy/config/initializers"
         },
         'database_setup' => true
       },
@@ -72,11 +61,4 @@ Vagrant.configure("2") do |config|
       "recipe[sandy::default]"
     ]
   end
-  config.vm.provision :shell, inline: <<-EOF
-echo "******************************************************************"
-echo "*                                                                *"
-echo "*  Your development environment is available at #{DEVVM_IP.ljust(15)}  *"
-echo "*                                                                *"
-echo "******************************************************************"
-  EOF
 end

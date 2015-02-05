@@ -1,4 +1,5 @@
-node.default!['nginx']['default_site_enabled'] = false
+node.override['nginx']['default_site_enabled'] = false
+node.override['nginx']['repo_source'] = 'nginx'
 include_recipe 'nginx'
 
 ruby_block 'move_nginx_confs' do
@@ -12,8 +13,7 @@ end
 template "/etc/nginx/sites-available/sandy_site" do
   source 'nginx_site.erb'
   variables({
-    install_path: "#{node['sandy']['paths']['application']}/current",
-    # shared_path: node['sandy']['paths']['shared'],
+    install_path: "#{node['sandy']['paths']['application']}",
     socket: "#{node['unicorn']['listen']}/sandy.socket",
     name: 'sandy',
     user: node['sandy']['account'],

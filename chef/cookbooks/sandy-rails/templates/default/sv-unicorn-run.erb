@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd <%= @options[:app] %>/current
+cd <%= @options[:app] %>
 
 exec 2>&1
 exec <%= node[:runit][:chpst_bin] %> -e /etc/sv/unicorn/env \

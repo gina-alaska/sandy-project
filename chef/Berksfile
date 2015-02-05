@@ -9,6 +9,7 @@ cookbook 'postgresql'
 cookbook 'redisio'
 cookbook 'openssh'
 cookbook 'logrotate', '~> 1.6.0'
+cookbook 'chef-server'
 
 cookbook 'sandy-dhcp', path: 'cookbooks/sandy-dhcp'
 cookbook 'sandy-chef-server', path: 'cookbooks/sandy-chef-server'

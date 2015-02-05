@@ -2,12 +2,12 @@
 default['unicorn'] = {
   preload_app: true,
   config_path: '/etc/unicorn/sandy.rb',
-  listen:      '/www/sandy/shared/tmp/sockets',
-  pid:         '/www/sandy/shared/tmp/pids/unicorn.pid',
-  stdout_path: '/www/sandy/shared/log/unicorn.stdout.log',
-  stderr_path: '/www/sandy/shared/log/unicorn.stderr.log',
+  listen:      '/www/sandy/tmp/sockets',
+  pid:         '/www/sandy/tmp/pids/unicorn.pid',
+  stdout_path: '/www/sandy/log/unicorn.stdout.log',
+  stderr_path: '/www/sandy/log/unicorn.stderr.log',
   worker_timeout: 60,
-  working_directory: '/www/sandy/current',
+  working_directory: '/www/sandy',
   before_fork: '
 defined?(ActiveRecord::Base) and
    ActiveRecord::Base.connection.disconnect!

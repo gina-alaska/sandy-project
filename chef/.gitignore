@@ -17,3 +17,6 @@ bin/*
 .kitchen.local.yml
 
 cspp
+
+data_bags/sandy/*
+!data_bags/sandy/.gitkeep

@@ -5,6 +5,26 @@
   "default_attributes": {
   },
   "override_attributes": {
+    "iptables-ng": {
+      "rules": {
+        "filter": {
+          "INPUT": {
+            "24007-glusterd": {
+              "rule": "-m state --state NEW -p tcp --dport 24007 -j ACCEPT",
+              "ip_version": 4
+            },
+            "24008-gluster-management": {
+              "rule": "-m state --state NEW -p tcp --dport 24008 -j ACCEPT",
+              "ip_version": 4
+            },
+            "49152-glusterfs": {
+              "rule": "-m state --state NEW -m multiport -p tcp --dports 49152:65535 -j ACCEPT",
+              "ip_version": 4
+            }
+          }
+        }
+      }
+    }
   },
   "chef_type": "role",
   "run_list": [
