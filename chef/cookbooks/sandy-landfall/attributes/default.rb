@@ -1,0 +1,6 @@
+default['sandy']['conveyor']['git-repo'] = 'git://github.com/gina-alaska/sandy-landfall'
+default['sandy']['conveyor']['git-revision'] = 'master'
+default['sandy']['conveyor']['git-action'] = 'checkout'
+default['sandy']['ruby']['version'] = '2.1.1'
+default['sandy']['raw_path'] = '/home/processing/raw'
+default['sandy']['shared_path'] = '/gluster/cache'
