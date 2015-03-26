@@ -1,0 +1,7 @@
+InfluxDB::Rails.configure do |config|
+  config.influxdb_database = <%=@database%>
+  config.influxdb_username = <%=@username%>
+  config.influxdb_password = <%=@password%>
+  config.influxdb_hosts    = <%=@hosts%>
+  config.influxdb_port     = 8086
+end

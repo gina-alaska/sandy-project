@@ -46,7 +46,8 @@ runit_service 'sidekiq' do
     "PATH" => "/usr/bin:/bin:#{node['sandy']['worker']['scripts-path']}/bin",
     "SVWAIT" => "15",
     "SANDY_SCRATCH_PATH" => node['sandy']['secrets']['scratch_path'],
-    "SANDY_SHARED_PATH" => node['sandy']['secrets']['shared_path']
+    "SANDY_SHARED_PATH" => node['sandy']['secrets']['shared_path'],
+    "PROCESSING_NUMBER_OF_CPUS" => "#{node['cpu']['total']}"
   })
   options({
     user: node['sandy']['account'],

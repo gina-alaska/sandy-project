@@ -1,3 +1,4 @@
+include_recipe "chef-vault"
 include_recipe "git"
 include_recipe "sandy::packages"
 include_recipe "sandy::ruby"
@@ -31,6 +32,12 @@ end
   end
 end
 
+node.default['sandy']['database']['password'] = chef_vault_item(:sandy, 'database')['passwords']['sandy']
+
+db_master = search(:node, 'roles:sandy-database').first
+db_master = node if db_master.nil?
+
+
 template "#{node['sandy']['paths']['application']}/config/database.yml" do
   owner node['sandy']['account']
   group node['sandy']['account']
@@ -38,8 +45,29 @@ template "#{node['sandy']['paths']['application']}/config/database.yml" do
   variables({
     environment: node['sandy']['environment'],
     database: node['sandy']['database'],
-    hostname: node['sandy']['database']['hostname']
+    hostname: db_master['ipaddress']
   })
+end
+
+influx_servers = search(:node, 'roles:sandy-influxdb').map(&:ipaddress)
+
+template "#{node['sandy']['paths']['application']}/config/initializers/influxdb-rails.rb" do
+  owner node['sandy']['account']
+  group node['sandy']['account']
+  mode 00644
+  variables({
+    database: 'sandy'
+    username: 'sandy'
+    password: data_bag_item('sandy', 'influxdb')['users']['sandy']['password']
+    hosts: influx_servers
+  })
+end
+
+ruby_block "squish-database-attributes" do
+  block do
+    node.rm('sandy','database','password')
+  end
+  subscribes :create, "template[#{node['sandy']['paths']['application']}/config/database.yml]"
 end
 
 template "#{node['sandy']['paths']['application']}/config/secrets.yml" do
@@ -47,9 +75,13 @@ template "#{node['sandy']['paths']['application']}/config/secrets.yml" do
   group node['sandy']['account']
   mode 00600
   variables({
-    environment: node['sandy']['environment']
+    environment: node['sandy']['environment'],
+    secrets: node['sandy']['rails']['secrets']
   })
 end
+
+redis_master = search(:node, 'roles:sandy-redis').first
+redis_master = node if redis_master.nil?
 
 template "#{node['sandy']['paths']['application']}/config/initializers/sidekiq.rb" do
   source "sidekiq_initializer.rb.erb"
@@ -57,7 +89,7 @@ template "#{node['sandy']['paths']['application']}/config/initializers/sidekiq.r
   group node['sandy']['account']
   mode 0644
   variables({
-    url: node['sandy']['redis']['url'],
+    url: "redis://#{redis_master['ipaddress']}:6379",
     namespace: node['sandy']['redis']['namespace']
   })
 end

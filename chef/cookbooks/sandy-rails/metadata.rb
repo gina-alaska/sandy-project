@@ -4,7 +4,7 @@ maintainer_email 'support+chef@gina.alaska.edu'
 license          'Apache 2.0'
 description      'Installs/Configures sandy'
 long_description 'Installs/Configures sandy'
-version          '0.2.15'
+version          '0.3.0'
 
 supports "centos", ">= 6.0"
 
@@ -19,3 +19,4 @@ depends 'yum-gina'
 depends 'redisio'
 depends 'git'
 depends 'chef-vault'
+depends 'build-essential'
