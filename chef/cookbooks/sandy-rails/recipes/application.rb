@@ -37,7 +37,6 @@ node.default['sandy']['database']['password'] = chef_vault_item(:sandy, 'databas
 db_master = search(:node, 'roles:sandy-database').first
 db_master = node if db_master.nil?
 
-
 template "#{node['sandy']['paths']['application']}/config/database.yml" do
   owner node['sandy']['account']
   group node['sandy']['account']
@@ -50,15 +49,14 @@ template "#{node['sandy']['paths']['application']}/config/database.yml" do
 end
 
 influx_servers = search(:node, 'roles:sandy-influxdb').map(&:ipaddress)
-
 template "#{node['sandy']['paths']['application']}/config/initializers/influxdb-rails.rb" do
   owner node['sandy']['account']
   group node['sandy']['account']
   mode 00644
   variables({
-    database: 'sandy'
-    username: 'sandy'
-    password: data_bag_item('sandy', 'influxdb')['users']['sandy']['password']
+    database: 'sandy-metrics',
+    username: 'sandy',
+    password: data_bag_item(:sandy, 'influxdb')['users']['sandy']['password'],
     hosts: influx_servers
   })
 end
