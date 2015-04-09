@@ -1,7 +1,0 @@
-#!/bin/bash
-
-cd <%= @options[:app_dir] %>
-exec 2>&1
-exec chpst -u <%= @options[:user] %> -e /etc/sv/sidekiq/env \
-  chruby-exec <%= @options[:rubyversion] %> \
-  -- bundle exec sidekiq -e <%=@options[:environment]%> -C config/sidekiq.yml -p <%= @options[:pidfile] %>
