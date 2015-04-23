@@ -2,7 +2,7 @@
 driver:
   name: vagrant
   vm_hostname: sandy-ldm.local
-  
+
 provisioner:
   name: chef_zero
 
@@ -16,3 +16,6 @@ suites:
     attributes:
       sandy-ldm:
         data_bag: sandy-ldm-test
+  - name: status
+    run_list:
+      - recipe[sandy-ldm::status]

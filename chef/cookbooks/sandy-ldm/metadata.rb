@@ -7,3 +7,6 @@ long_description 'Installs/Configures sandy-ldm'
 version          '0.1.0'
 
 depends 'ldm'
+depends 'nginx'
+depends 'runit'
+depends 'rubies'
