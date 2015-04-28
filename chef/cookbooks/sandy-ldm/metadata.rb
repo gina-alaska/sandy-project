@@ -4,7 +4,7 @@ maintainer_email 'you@example.com'
 license          'all_rights'
 description      'Installs/Configures sandy-ldm'
 long_description 'Installs/Configures sandy-ldm'
-version          '0.2.2'
+version          '0.2.4'
 
 depends 'ldm'
 depends 'nginx'

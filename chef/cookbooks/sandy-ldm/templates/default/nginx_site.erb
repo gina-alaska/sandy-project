@@ -30,9 +30,9 @@ server {
   error_page 500 502 503 504 /500.html;
 
   location /data/ {
-    root <%= @install_path %>/var/data/
+    root <%= @install_path %>/var/data/;
   }
-  
+
   location = /500.html {
     root <%= @install_path %>;
   }
