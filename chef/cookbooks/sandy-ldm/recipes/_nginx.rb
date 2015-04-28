@@ -15,7 +15,7 @@ template "/etc/nginx/sites-available/ldm-status-site" do
   variables({
     install_path: "#{node['ldm-status']['home']}/current",
     name: 'ldm-status-site',
-    port: 3000
+    port: 3000,
     environment: 'production'
   })
 end
