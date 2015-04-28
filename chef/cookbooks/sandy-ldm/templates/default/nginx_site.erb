@@ -21,7 +21,7 @@ server {
 
 <% if @environment == 'production' %>
   location ~ ^/(bootstrap)/ {
-        root <%= @install_path %>/public/bootstrap;
+        root <%= @install_path %>/public;
         gzip_static on;
         expires max;
         add_header Cache-Control public;
