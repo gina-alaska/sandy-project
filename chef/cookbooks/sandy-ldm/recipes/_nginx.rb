@@ -16,6 +16,7 @@ template "/etc/nginx/sites-available/ldm-status-site" do
     install_path: "#{node['ldm-status']['home']}/current",
     name: 'ldm-status-site',
     port: 3000
+    environment: 'production'
   })
 end
 
