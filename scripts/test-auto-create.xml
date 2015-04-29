@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<domain type="kvm" id="3">
+  <name>test-auto-create</name>
+  <memory unit="KiB">4194304</memory>
+  <currentMemory unit="KiB">4194304</currentMemory>
+  <vcpu placement="static">1</vcpu>
+  <os>
+    <type arch="x86_64" machine="rhel6.6.0">hvm</type>
+    <boot dev="hd"/>
+  </os>
+  <features>
+    <acpi/>
+    <apic/>
+    <pae/>
+  </features>
+  <clock offset="utc"/>
+  <on_poweroff>destroy</on_poweroff>
+  <on_reboot>restart</on_reboot>
+  <on_crash>restart</on_crash>
+  <devices>
+    <emulator>/usr/libexec/qemu-kvm</emulator>
+    <disk type="network" device="disk">
+      <driver name="qemu" type="raw" cache="none"/>
+      <source protocol="gluster" name="vm-pool/test-auto-create.img">
+        <host name="glc-s-01-p" port="24007"/>
+      </source>
+      <target dev="vda" bus="virtio"/>
+      <alias name="virtio-disk0"/>
+      <address type="pci" domain="0x0000" bus="0x00" slot="0x04" function="0x0"/>
+    </disk>
+    <interface type="bridge">
+      <source bridge="br0"/>
+      <target dev="vnet0"/>
+      <model type="virtio"/>
+      <alias name="net0"/>
+      <address type="pci" domain="0x0000" bus="0x00" slot="0x03" function="0x0"/>
+    </interface>
+    <serial type="pty">
+      <source path="/dev/pts/1"/>
+      <target port="0"/>
+      <alias name="serial0"/>
+    </serial>
+    <console type="pty" tty="/dev/pts/1">
+      <source path="/dev/pts/1"/>
+      <target type="serial" port="0"/>
+      <alias name="serial0"/>
+    </console>
+    <video>
+      <model type="cirrus" vram="9216" heads="1"/>
+      <alias name="video0"/>
+      <address type="pci" domain="0x0000" bus="0x00" slot="0x02" function="0x0"/>
+    </video>
+    <memballoon model="virtio">
+      <alias name="balloon0"/>
+      <address type="pci" domain="0x0000" bus="0x00" slot="0x05" function="0x0"/>
+    </memballoon>
+  </devices>
+</domain>
