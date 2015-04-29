@@ -1,0 +1,9 @@
+source "https://supermarket.chef.io"
+
+cookbook 'sandy', path: '../sandy-rails'
+cookbook 'lvm'
+cookbook 'xfs'
+cookbook 'parted'
+cookbook 'yum-gina', git: 'git@github.com:gina-alaska/yum-gina-cookbook'
+metadata
+
