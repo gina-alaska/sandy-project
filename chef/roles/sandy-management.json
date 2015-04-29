@@ -20,7 +20,7 @@
   },
   "chef_type": "role",
   "run_list": [
-    "role[linux_base]",
+    "role[sandy-base]",
     "recipe[chef-server]"
   ],
   "env_run_lists": {

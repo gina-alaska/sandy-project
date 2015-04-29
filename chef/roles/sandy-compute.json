@@ -33,7 +33,7 @@
   },
   "chef_type": "role",
   "run_list": [
-    "role[linux_base]",
+    "role[sandy-base]",
     "recipe[sandy-compute::default]",
     "recipe[gina-gluster::client]"
   ],

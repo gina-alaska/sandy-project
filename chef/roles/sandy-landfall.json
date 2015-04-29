@@ -1,23 +1,10 @@
 {
-  "name": "sandy-worker",
-  "description": "Sandy Worker",
+  "name": "sandy-landfall",
+  "description": "Sandy entry point for data",
   "json_class": "Chef::Role",
   "default_attributes": {
-
   },
   "override_attributes": {
-    "sandy": {
-      "account": "processing",
-      "shared_dir": "/gluster/cache/",
-      "scratch_dir": "/mnt/scratch/workdir",
-      "worker": {
-        "concurrency": 1
-      },
-      "database": {
-        "name": "sandy",
-        "database": "sandy-production"
-      }
-    },
     "chruby": {
       "version": "0.3.9",
       "default": "2.1.1",
@@ -28,6 +15,9 @@
       },
       "auto_switch": false
     },
+    "users": [
+      "processing"
+    ],
     "iptables-ng": {
       "rules": {
         "filter": {
@@ -44,9 +34,9 @@
   "chef_type": "role",
   "run_list": [
     "role[sandy-base]",
-    "recipe[sandy::worker]"
+    "user::data_bag",
+    "sandy-landfall::default"
   ],
   "env_run_lists": {
-
   }
 }

@@ -1,0 +1,18 @@
+{
+  "name": "cspp-viirs-gtm",
+  "description": "CSPP VIIRS IMAGERY EDR",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "cspp": {
+      "imagery-edr": {
+        "components": {
+          "app": {"url": "http://mirrors.gina.alaska.edu/SSEC/CSPP/CSPP_IMAGERY_EDR_V2.0.tar.gz"},
+          "cache": {"url": "http://mirrors.gina.alaska.edu/SSEC/CSPP/CSPP_IMAGERY_EDR_V2.0_CACHE.tar.gz"}
+        }
+      }
+    }
+  },
+  "run_list": [
+    "cspp::imagery_edr"
+  ]
+}
