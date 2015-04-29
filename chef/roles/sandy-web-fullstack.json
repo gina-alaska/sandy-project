@@ -1,6 +1,6 @@
 {
-  "name": "sandy-dev-allinone",
-  "description": "Sandy Developement Machine, All in one",
+  "name": "sandy-web-fullstack",
+  "description": "Sandy Web Site, Database, Redis and Workers",
   "json_class": "Chef::Role",
   "default_attributes": {
   },
@@ -13,16 +13,6 @@
         "2.1.1": true
       },
       "auto_switch": false
-    },
-    "postgresql": {
-      "password": {
-        "postgres": "s4nd1-d3v-D4taBa53"
-      }
-    },
-    "sandy": {
-      "database": {
-        "password": "sandy-dev-d4t4b4s3"
-      }
     },
     "users": [
       "webdev",

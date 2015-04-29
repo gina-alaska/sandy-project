@@ -1,0 +1,44 @@
+{
+  "name": "sandy-ldm",
+  "description": "Sandy LDM Server",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "iptables-ng": {
+      "rules": {
+        "filter": {
+          "INPUT": {
+            "388-ldm-tcp": {
+              "rule": "-m state --state NEW -p tcp --dport 388 -j ACCEPT",
+              "ip_version": 4
+            },
+            "388-ldm-ucp": {
+              "rule": "-m state --state NEW -p udp --dport 388 -j ACCEPT",
+              "ip_version": 4
+            },
+            "80-http-tcp": {
+              "rule": "-m state --state NEW -p tcp --dport 80 -j ACCEPT",
+              "ip_version": 4
+            },
+            "111-portmap-tcp": {
+              "rule": "-m state --state NEW -p tcp -s 137.229.0.0/16,209.112.195.11/32 --dport 111 -j ACCEPT",
+              "ip_version": 4
+            },
+            "111-portmap-udp": {
+              "rule": "-m state --state NEW -p udp -s 137.229.0.0/16,209.112.195.11/32 --dport 111 -j ACCEPT",
+              "ip_version": 4
+            }
+          }
+        }
+      }
+    }
+  },
+  "chef_type": "role",
+  "run_list": [
+    "sandy-ldm::default",
+    "sandy-ldm::status"
+  ],
+  "env_run_lists": {
+  }
+}

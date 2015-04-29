@@ -1,0 +1,5 @@
+#!/bin/sh
+cd <%=@options[:path]%>
+exec 2>&1
+exec chpst -u <%=@options[:user]%> -e /etc/sv/conveyor/env chruby-exec <%= @options[:rubyversion] %> \
+  -- bundle exec conveyor

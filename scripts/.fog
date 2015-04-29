@@ -1,0 +1,3 @@
+---
+:default
+  :libvirt_uri: 'qemu+ssh://root@kog7.gina.alaska.edu/system'

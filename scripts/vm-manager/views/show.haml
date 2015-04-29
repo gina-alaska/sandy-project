@@ -1,0 +1,36 @@
+!!!html
+
+%html
+  %head
+    %title Sandy VM Manager
+    - %w{util webutil base64 websock des keysymdef keyboard input display jsunzip rfb keysym}.each do |js|
+      %script{src: "/js/#{js}.js"}
+    %script{src: 'http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'}
+    %script{src: '/js/application.js'}
+  %body
+    %script
+
+    =@port
+    =@host
+    %button#connect
+      = "Connect to #{@host}:#{@port}"
+    #noVNC_status_bar
+    #noVNC_status
+      loading
+    #noVNC_buttons
+      %button#sendCtrlAltDelButton
+        Ctrl-Alt-Delete
+      #noVNC_xvp_buttons
+        %button#xvpShutdownButton
+          Shutdown
+        %button#xvpRebootButton
+          Reboot
+        %button#xvpResetButton
+          Reset
+
+    %button#sendShutdownButton
+      Shutdown
+
+    %canvas#noVNC-canvas{width: "640px", height: "20px", data: {vnc: {host: @host,port: @port}}}
+      Canvas not supported
+

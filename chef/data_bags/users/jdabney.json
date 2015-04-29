@@ -1,0 +1,20 @@
+{
+  "id": "jdabney",
+  "uid": 5083,
+  "home": "/home/jdabney",
+  "shell": "/bin/bash",
+  "comment": "Jeremiah Dabney",
+  "email": "jsdabney@alaska.edu",
+  "admin": true,
+  "ssh": {
+    "public_keys": [
+      "ssh-dss AAAAB3NzaC1kc3MAAACBAOjpJsypmbSdMnBoBy1J71UzGx2PaR0SI06ryI11oc4xJ46rOq3XNHjMiQi+6wRVWylMLzMDFRTBzrO9jRcpeEbO775tobHF2VroZsiYGxR14Z7GitajDrNiEznmjyl20ojGpsbDKxkSUE8dXB+13EpPewJPVg+ypLRlfHFP1rf/AAAAFQCS0FjqBfMqBDANtrfIEgM/RI0wvwAAAIB4dYc3lb8LaCpKtRvofzKaDPfxZjldKZ3z+gWZlhsF9B+B3M5mWzOBIegrwyqWrPVHpDFBbKqx6XS/WCzHHOqhnnaK1NZJ3UXs4Nqdbb4nBZiiMXezj6Ycy/R0Sxu+aqTBTPaWvDnVCWfmhfW9shFHC64n4d1Uyk8YCP6K89QEcQAAAIEAqc0n/mIDziQd2I1p1epGgEw6AqKe4TkWP9TXzaudkKC9/gp/hQ7nBg/6zdzh44sBLOogN7Mkrgr1ovLk8q4jARnI7WJKI1+nxM7UIYH2Akcwus9qRTRdSfuoKCA0R4RkyK/hgPNwgOc9HWWm+cuDnfdwGJc3q0mJCCp6nQqnXS0= jdabney"
+    ],
+    "authorized_users": [
+      "jdabney"
+    ]
+  },
+  "ssh_keys": [
+    "ssh-dss AAAAB3NzaC1kc3MAAACBAOjpJsypmbSdMnBoBy1J71UzGx2PaR0SI06ryI11oc4xJ46rOq3XNHjMiQi+6wRVWylMLzMDFRTBzrO9jRcpeEbO775tobHF2VroZsiYGxR14Z7GitajDrNiEznmjyl20ojGpsbDKxkSUE8dXB+13EpPewJPVg+ypLRlfHFP1rf/AAAAFQCS0FjqBfMqBDANtrfIEgM/RI0wvwAAAIB4dYc3lb8LaCpKtRvofzKaDPfxZjldKZ3z+gWZlhsF9B+B3M5mWzOBIegrwyqWrPVHpDFBbKqx6XS/WCzHHOqhnnaK1NZJ3UXs4Nqdbb4nBZiiMXezj6Ycy/R0Sxu+aqTBTPaWvDnVCWfmhfW9shFHC64n4d1Uyk8YCP6K89QEcQAAAIEAqc0n/mIDziQd2I1p1epGgEw6AqKe4TkWP9TXzaudkKC9/gp/hQ7nBg/6zdzh44sBLOogN7Mkrgr1ovLk8q4jARnI7WJKI1+nxM7UIYH2Akcwus9qRTRdSfuoKCA0R4RkyK/hgPNwgOc9HWWm+cuDnfdwGJc3q0mJCCp6nQqnXS0= jdabney"
+  ]
+}

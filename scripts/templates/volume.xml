@@ -1,0 +1,17 @@
+<volume type='file'>
+  <name>%{name}</name>
+  <key>/var/lib/libvirt/images/%{pool}/%{name}</key>
+  <source>
+  </source>
+  <capacity unit='bytes'>%{size}</capacity>
+  <allocation unit='bytes'>%{allocation}</allocation>
+  <target>
+    <path>/var/lib/libvirt/images/%{pool}/%{name}</path>
+    <format type='%{format}'/>
+    <permissions>
+      <mode>0644</mode>
+      <owner>0</owner>
+      <group>0</group>
+    </permissions>
+  </target>
+</volume>

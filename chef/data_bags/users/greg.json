@@ -1,0 +1,20 @@
+{
+  "id": "greg",
+  "uid": 5029,
+  "home": "/home/greg",
+  "shell": "/bin/bash",
+  "comment": "Greg Wirth",
+  "email": "greg@gina.alaska.edu",
+  "admin": true,
+  "ssh": {
+    "public_keys": [
+      "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAllXxsUBDhrmZURDWbfhS5FOX9SNIB4+NrDaAigarj4tvnLQaK3z+SwvfT/UAQsZ1BcJhT9QvYc0ThCWBH1UseRCW0m6/fSBM8A61ZfgJBU4YAZlfVqaSd05pyuRlgFQiaCK8RqHUJNst9Qz5+warX0OKysmWVfPPcub/WrHkrxw2lvIqQCuFLvb4tc8jtvtSbC7TAiGrK3mXEkgPPa7ltgjUH8nPeG7W1sTNOGMIor4bHOXz+xratI6opcF7O+qoTRuDBHtSYikUFTZdEwsJhcGiXx8V99jAmQjndfvT0MrnC9+kHhqqmc4fnxofLWRiEiH/mBGTULjROnH+j/WKvQ== root@xanth.gina.alaska.edu"
+    ],
+    "authorized_users": [
+      "greg"
+    ]
+  },
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAllXxsUBDhrmZURDWbfhS5FOX9SNIB4+NrDaAigarj4tvnLQaK3z+SwvfT/UAQsZ1BcJhT9QvYc0ThCWBH1UseRCW0m6/fSBM8A61ZfgJBU4YAZlfVqaSd05pyuRlgFQiaCK8RqHUJNst9Qz5+warX0OKysmWVfPPcub/WrHkrxw2lvIqQCuFLvb4tc8jtvtSbC7TAiGrK3mXEkgPPa7ltgjUH8nPeG7W1sTNOGMIor4bHOXz+xratI6opcF7O+qoTRuDBHtSYikUFTZdEwsJhcGiXx8V99jAmQjndfvT0MrnC9+kHhqqmc4fnxofLWRiEiH/mBGTULjROnH+j/WKvQ== root@xanth.gina.alaska.edu"
+  ]
+}

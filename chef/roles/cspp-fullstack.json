@@ -5,6 +5,10 @@
   "run_list": [
     "role[cspp-snpp-sdr]",
     "role[cspp-viirs-edr]",
-    "role[cspp-uw-hyperspectral]"
-  ]
+    "role[cspp-uw-hyperspectral]",
+    "user::data_bag"
+  ],
+  "override_attributes": {
+    "users": ["processing"]
+  }
 }

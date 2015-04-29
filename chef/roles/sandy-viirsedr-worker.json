@@ -1,0 +1,22 @@
+{
+  "name": "sandy-viirsedr-worker",
+  "description": "Sandy CSPP VIIRS EDR Worker",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "sandy": {
+      "worker": {
+        "queues": ["viirs_edr", "default"]
+      }
+    }
+  },
+  "chef_type": "role",
+  "run_list": [
+    "role[sandy-worker]",
+    "recipe[sandy-worker::viirs-edr]",
+    "role[cspp-viirs-edr]"
+  ],
+  "env_run_lists": {
+  }
+}

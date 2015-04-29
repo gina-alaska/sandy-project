@@ -1,0 +1,11 @@
+source "https://supermarket.getchef.com"
+
+cookbook 'sandy', path: '../sandy-rails'
+cookbook 'lvm'
+cookbook 'parted'
+cookbook 'yum-gina', git: 'git@github.com:gina-alaska/yum-gina-cookbook'
+cookbook 'resource-control'  # Why?
+cookbook 'gina-gluster', git: 'git@github.com:gina-alaska/gina-gluster-cookbook'
+cookbook 'xfs'
+
+metadata

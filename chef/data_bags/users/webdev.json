@@ -1,0 +1,26 @@
+{
+  "id": "webdev",
+  "uid": 5061,
+  "home": "/home/webdev",
+  "shell": "/bin/bash",
+  "comment": "Web Developer",
+  "admin": false,
+  "ssh": {
+    "authorized_users": [
+      "smacfarl",
+      "jcable"
+    ],
+    "authorized_keys": [
+      "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDPTmVcOEpGe6j0Q2nZWx8qLA5SJvGZWR05hnhJ7uQw1fezgaabbYzcQ3SEp50Ms+WrG1jz8SZyLsjsYMgRk9uNpyLZOpqoU3AOlQtkDo/FLsSLWk2tGUUihdr+sMaux63RbovqUNoR33rRR5vRKTV+G/G9laYFOZ2Sl1ru053AHXKP79fRthEUYOZCo3LPKcDeuK4LwqMMB31/Rzw14AtWxVyHKF+BncXVZmEqhfFFWbkWqyAM88wHF/cYZdZCqiMDThlnwIk5mDGSpzIPDySuyJRSWwaKmmAIfaC/MMG/Lq17hLPmrENunJx5Ty97/b4CvKOJYBvVOIVt+fP1nV9P smacfarl@soup",
+      "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC/H0cdD7Ct/h73UOOH4NEBxYkVxw2fX8xw6i9bOdJqWTVGDbz8uyC4E5FkmqhgXU/KdBWjiUhCAOB1RMK3hvyGj8ox7DhrA208I3xtaYskXRfiHR29VnOXsZJdh8bxjeV94zDGpyz8S+2pHgaNiiuYWX5OkMimyVQ9bOzyCZM/jFbH5+qiMx2U/Idtg1KVS6NnPIwx0s7W0w+oOZNYoCdPgmuWSJuMIETrTvtRIyFOuzVSybPfxU2ElexEwEPGy9DxbjH9snY7ybCSryIMK6cjWHwpoj/oJfeWJP/FWMIfHq/gi+Vra97QKJncvSNmgzWDSyFtP7f9dBumFRgopT// scott@Scotts-MacBook-Air.local",
+      "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAzooCYvSLgU0+7vPaJfdlt1VmkRglhBkIrjtwqENay4n3CBkOTnUP/gnxiXWE1vwMd/I5NavHaoGXv8M+mDAB16J4J/zRU0JFYideraxZalV9Ro/V/qm9UzkHZMxmW7Yz0XG+DYcI7aHLzmIXeAYk6BkgsUG17QgFe/74CQWLd/noJZrb509e4hTgZ5mJAI13B42eQ09/FNvDjzBRMmQt6uutnT0MrlKMMuGc7YzEorQKLCdH323EHg3yBGhHFMC0y7dkEQYW9TAQjnT6OBstb0NY9Cycct/fDwRAJMI/oHaf8YR3e/UJsxS3Amn4hGGybjotMRiYWX7oOr/dZp9L5Q== wfisher@zoom",
+      "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA7V3zVskoo6jdYHPnre/K242zHIwOdbc3X9Z1cDbth3oDmipF4P3SYHbpXQlDQOwgdlcHMaXf/6Upg2BwPAGwyd+xW/MdyQh/fIqfGaMVVBVq4ZMv3ugYl6orgGXYfFzz6NKbCKsXL9IRpcnnuLYmdXnfnRivWmIYgiSVPH8Qg0ZI/m7LKIvhBY0b7ZDzvcCz+jj+4jQfQrBiOUjwRp0otmkUPN3nIs7lB6f58Ps2UkjSXtYDYSWKCdaQZhKSgQgP42ReaC8nVZMWaFAY84rsg+EEp7ZtJEBduHaQksex9exW1zU8xLHDT+cDz89F5SOrmuXCSNdRKkoV2I3xlaR6cQ== will@pico.local"
+    ]
+  },
+  "ssh_keys": [
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDPTmVcOEpGe6j0Q2nZWx8qLA5SJvGZWR05hnhJ7uQw1fezgaabbYzcQ3SEp50Ms+WrG1jz8SZyLsjsYMgRk9uNpyLZOpqoU3AOlQtkDo/FLsSLWk2tGUUihdr+sMaux63RbovqUNoR33rRR5vRKTV+G/G9laYFOZ2Sl1ru053AHXKP79fRthEUYOZCo3LPKcDeuK4LwqMMB31/Rzw14AtWxVyHKF+BncXVZmEqhfFFWbkWqyAM88wHF/cYZdZCqiMDThlnwIk5mDGSpzIPDySuyJRSWwaKmmAIfaC/MMG/Lq17hLPmrENunJx5Ty97/b4CvKOJYBvVOIVt+fP1nV9P smacfarl@soup",
+    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC/H0cdD7Ct/h73UOOH4NEBxYkVxw2fX8xw6i9bOdJqWTVGDbz8uyC4E5FkmqhgXU/KdBWjiUhCAOB1RMK3hvyGj8ox7DhrA208I3xtaYskXRfiHR29VnOXsZJdh8bxjeV94zDGpyz8S+2pHgaNiiuYWX5OkMimyVQ9bOzyCZM/jFbH5+qiMx2U/Idtg1KVS6NnPIwx0s7W0w+oOZNYoCdPgmuWSJuMIETrTvtRIyFOuzVSybPfxU2ElexEwEPGy9DxbjH9snY7ybCSryIMK6cjWHwpoj/oJfeWJP/FWMIfHq/gi+Vra97QKJncvSNmgzWDSyFtP7f9dBumFRgopT// scott@Scotts-MacBook-Air.local",
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAzooCYvSLgU0+7vPaJfdlt1VmkRglhBkIrjtwqENay4n3CBkOTnUP/gnxiXWE1vwMd/I5NavHaoGXv8M+mDAB16J4J/zRU0JFYideraxZalV9Ro/V/qm9UzkHZMxmW7Yz0XG+DYcI7aHLzmIXeAYk6BkgsUG17QgFe/74CQWLd/noJZrb509e4hTgZ5mJAI13B42eQ09/FNvDjzBRMmQt6uutnT0MrlKMMuGc7YzEorQKLCdH323EHg3yBGhHFMC0y7dkEQYW9TAQjnT6OBstb0NY9Cycct/fDwRAJMI/oHaf8YR3e/UJsxS3Amn4hGGybjotMRiYWX7oOr/dZp9L5Q== wfisher@zoom",
+    "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA7V3zVskoo6jdYHPnre/K242zHIwOdbc3X9Z1cDbth3oDmipF4P3SYHbpXQlDQOwgdlcHMaXf/6Upg2BwPAGwyd+xW/MdyQh/fIqfGaMVVBVq4ZMv3ugYl6orgGXYfFzz6NKbCKsXL9IRpcnnuLYmdXnfnRivWmIYgiSVPH8Qg0ZI/m7LKIvhBY0b7ZDzvcCz+jj+4jQfQrBiOUjwRp0otmkUPN3nIs7lB6f58Ps2UkjSXtYDYSWKCdaQZhKSgQgP42ReaC8nVZMWaFAY84rsg+EEp7ZtJEBduHaQksex9exW1zU8xLHDT+cDz89F5SOrmuXCSNdRKkoV2I3xlaR6cQ== will@pico.local"
+  ]
+}

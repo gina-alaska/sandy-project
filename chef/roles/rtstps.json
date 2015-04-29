@@ -5,7 +5,8 @@
   "default_attributes": {
     "rtstps": {
       "source": "http://mirrors.gina.alaska.edu/SSEC/CSPP/RT-STPS_5.3.tar.gz"
-    }
+    },
+    "users": ["processing"]
   },
   "run_list": [
     "rtstps::default"
