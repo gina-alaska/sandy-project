@@ -56,7 +56,7 @@ cron 'cleanup_landingpad' do
   action :create
   minute 0
   user 'processing'
-  command "find /home/processing/raw -type f -ctime +5 -delete"
+  command "find /home/processing/raw -type f -ctime +3 -delete"
 end
 
 #Should mount shared storage too
