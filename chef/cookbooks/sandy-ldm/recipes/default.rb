@@ -27,3 +27,11 @@ node.override['ldm']['checksum'] = app['checksum'] if app['checksum']
 
 
 include_recipe "ldm::default"
+
+cron 'ldmadmin-scour' do
+  action :create
+  time :hourly
+  user 'ldm'
+  environment({ "PATH" => "$PATH:#{node['ldm']['install_dir']}/bin" })
+  command "ldmadmin scour"
+end
