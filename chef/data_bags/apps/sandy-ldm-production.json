@@ -102,12 +102,12 @@
       "options": "data/ldm/exp/\\1"
     }],
     "scours": [{
-      "directory": "~ldm/logs",
-      "days_old": "7",
+      "directory": "/opt/ldm/var/logs",
+      "days_old": "2",
       "pattern": "*.stats"
     },{
-      "directory": "~ldm/data",
-      "days_old": "7",
+      "directory": "/opt/ldm/var/data",
+      "days_old": "2",
       "pattern": "*"
     }]
   }
