@@ -4,7 +4,7 @@ maintainer_email 'you@example.com'
 license          'all_rights'
 description      'Installs/Configures sandy-landfall'
 long_description 'Installs/Configures sandy-landfall'
-version          '0.2.1'
+version          '0.3.0'
 
 depends 'lvm'
 depends 'yum-gina'
