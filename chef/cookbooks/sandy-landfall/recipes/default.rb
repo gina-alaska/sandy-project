@@ -31,6 +31,15 @@ directory '/home/processing/raw' do
   group 'processing'
 end
 
+%w{gilmore uafgina barrow}.each do |dir|
+  directory "/home/processing/raw/#{dir}" do
+    owner 'processing'
+    group 'processing'
+    recursive true
+  end
+end
+
+
 git '/home/processing/conveyor' do
   repository node['sandy']['conveyor']['git-repo']
   revision node['sandy']['conveyor']['git-revision']
@@ -56,7 +65,7 @@ cron 'cleanup_landingpad' do
   action :create
   minute 0
   user 'processing'
-  command "find /home/processing/raw -type f -ctime +3 -delete"
+  command "find /home/processing/raw -type f -ctime +1 -delete"
 end
 
 #Should mount shared storage too
@@ -81,6 +90,7 @@ sandy_controller = node if sandy_controller.nil?
 
 include_recipe 'runit'
 runit_service 'conveyor' do
+  action [:enable, :start]
   log true
   default_logger true
   env({
