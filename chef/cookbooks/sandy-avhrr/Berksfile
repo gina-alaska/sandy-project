@@ -1,5 +1,6 @@
 source 'https://supermarket.chef.io'
 
 cookbook 'polar2grid', github: 'gina-alaska/polar2grid-cookbook'
+cookbook 'nfs'
 
 metadata
