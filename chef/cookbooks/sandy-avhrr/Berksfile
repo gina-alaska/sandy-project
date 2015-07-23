@@ -2,5 +2,7 @@ source 'https://supermarket.chef.io'
 
 cookbook 'polar2grid', github: 'gina-alaska/polar2grid-cookbook'
 cookbook 'nfs'
-
+cookbook 'build-essential'
+cookbook 'git'
+cookbook 'yum-gina', github: 'gina-alaska/yum-gina-cookbook'
 metadata
