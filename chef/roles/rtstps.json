@@ -4,7 +4,7 @@
   "json_class": "Chef::Role",
   "default_attributes": {
     "rtstps": {
-      "source": "http://mirrors.gina.alaska.edu/SSEC/CSPP/RT-STPS_5.6.tar.gz"
+      "source": "http://mirrors.gina.alaska.edu/NASA/RT-STPS_5.6.tar.gz"
     }
   },
   "run_list": [
