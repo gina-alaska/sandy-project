@@ -1,0 +1,24 @@
+{
+  "name": "sandy-avhrr-worker",
+  "description": "Sandy AVHRR Worker",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "sandy": {
+      "worker": {
+        "queues": ["terascan", "avhrr", "default"]
+      }
+    },
+    "polar2grid": {
+      "url": "http://mirrors.gina.alaska.edu/SSEC/CSPP/CSPP_IMAPP_POLAR2GRID_V1.2.tar.gz"
+    }
+  },
+  "chef_type": "role",
+  "run_list": [
+    "role[sandy-worker]",
+    "recipe[sandy-avhrr]"
+  ],
+  "env_run_lists": {
+  }
+}

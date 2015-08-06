@@ -9,6 +9,7 @@ include_recipe "nfs"
 include_recipe "build-essential"
 include_recipe "git"
 include_recipe "yum-gina"
+include_recipe "yum-epel"
 
 directory "/opt/terascan" do
   recursive true
@@ -18,7 +19,9 @@ yum_package "glibc" do
   arch 'i686'
 end
 
-package 'csh'
+%w{ csh nco }.each do |pkg|
+  package pkg
+end
 
 mount "/opt/terascan" do
   device "say.gina.alaska.edu:/opt/terascan"
@@ -32,6 +35,13 @@ file "/etc/profile.d/terascan_env.sh" do
 end
 
 package 'mapping-tools-builds'
+
+#Force mapping tools to be sourced last-ish
+file '/etc/profile.d/zz_mapping-tools.sh' do
+  mode 0644
+  #Force our mapping tools to be first in the path
+  content "export PATH=/opt/mapping_tools_builds/2015-06-08/bin:$PATH"
+end
 
 deploy_revision '/opt/gdal-utils' do
   repo 'https://github.com/gina-alaska/processing-utils'
