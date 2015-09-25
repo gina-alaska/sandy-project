@@ -1,5 +1,0 @@
-source 'https://supermarket.chef.io'
-
-cookbook 'influxdb', '~> 0.1.4'
-
-metadata

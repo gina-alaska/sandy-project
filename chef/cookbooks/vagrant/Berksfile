@@ -1,7 +1,0 @@
-source 'http://supermarket.chef.io'
-
-cookbook 'influxdb'
-cookbook 'collectd', github: 'hectcastro/chef-collectd'
-cookbook 'grafana', github: 'JonathanTron/chef-grafana'
-
-

@@ -1,8 +1,0 @@
-{
-  "id": "upstream",
-  "run_list": ["role['sandy-ldm-worker']"],
-  "automatic": {
-    "ipaddress": "10.0.2.100",
-    "roles": ["sandy-ldm-worker"]
-  }
-}

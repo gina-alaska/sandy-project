@@ -1,9 +1,0 @@
-source "https://supermarket.getchef.com"
-
-cookbook 'yum-gina', git: "git@github.com:gina-alaska/yum-gina-cookbook.git"
-cookbook 'postgresql'
-cookbook 'database'
-cookbook 'user'
-cookbook 'chruby'
-
-metadata

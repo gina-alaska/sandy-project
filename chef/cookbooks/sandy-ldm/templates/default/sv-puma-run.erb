@@ -1,7 +1,0 @@
-#!/bin/bash
-
-cd <%= "#{node['ldm-status']['home']}/current" %>
-
-exec 2>&1
-exec chpst -u ldm  -e /etc/sv/puma/env \
-  bundle exec puma -C config/puma.rb

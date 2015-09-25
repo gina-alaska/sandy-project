@@ -1,7 +1,0 @@
-name             'sandy-compute'
-maintainer       'UAF-GINA'
-maintainer_email 'support+chef@gina.alaska.edu'
-license          'Apache 2.0'
-description      'Installs/Configures sandy-compute'
-long_description 'Installs/Configures sandy-compute'
-version          '0.1.1'

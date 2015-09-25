@@ -1,8 +1,0 @@
-source "https://supermarket.chef.io"
-
-cookbook 'ldm', github: 'gina-alaska/ldm-cookbook'
-cookbook 'rubies'
-cookbook 'nginx'
-cookbook 'runit'
-
-metadata

@@ -1,8 +1,0 @@
-{
-  "id": "ldm",
-  "uid": 9999,
-  "gid": 9999,
-  "ssh_keys": [
-    "some key"
-  ]
-}

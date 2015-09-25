@@ -1,5 +1,0 @@
-source "https://supermarket.chef.io"
-
-cookbook 'collectd', github: 'hectcastro/chef-collectd'
-
-metadata
