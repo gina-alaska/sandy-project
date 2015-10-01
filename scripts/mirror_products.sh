@@ -101,8 +101,8 @@ for file in $(cat $TMPFILE); do
 done
 
 #Remove old files
-find $OUTPUT -type f -mtime +${DURATION} -delete
+find $OUTPUT_PATH -type f -mtime +${DURATION} -delete
 #Do it again, for empty directories
-find $OUTPUT -type d -empty -delete
+find $OUTPUT_PATH -type d -empty -delete
 
 rm $TMPFILE
