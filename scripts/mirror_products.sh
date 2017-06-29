@@ -64,12 +64,12 @@ DURATION="${DURATION:-1}"
 
 case $(uname -s) in
   Linux)
-  START_DATE=$(date +"%Y-%m-%d" -d "${DURATION} days ago")
-  END_DATE=$(date +"%Y-%m-%d" -d "tomorrow")
+  START_DATE=$(date +"%Y-%m-%d" --utc -d "${DURATION} days ago")
+  END_DATE=$(date +"%Y-%m-%d" --utc -d "tomorrow")
   ;;
   Darwin)
-  START_DATE=$(date -j -v-${DURATION}d +"%Y-%m-%d")
-  END_DATE=$(date -j -v+1d +"%Y-%m-%d")
+  START_DATE=$(date -u -j -v-${DURATION}d +"%Y-%m-%d")
+  END_DATE=$(date -u -j -v+1d +"%Y-%m-%d")
   ;;
   ?)
   echo "UNKNOWN Platform"
